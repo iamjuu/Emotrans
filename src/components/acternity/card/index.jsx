@@ -1,43 +1,40 @@
-import { BedroomImage2, BedroomImage5, KitchenImage2, LivingRoomImage2, Wall1 } from "../../../assets";
+import { BedroomImage2, BedroomImage5, KitchenImage2, LivingRoomImage2, Wall1,Faju,Fidutty,Placeholder,PlaceholderGirl } from "../../../assets";
 import { AnimatedTestimonials } from "../../../ui/animated-testimonials/animated-testimonials";
 
 export function AnimatedTestimonialsDemo() {
   const testimonials = [
     {
       quote:
-        "Exceptional craftsmanship and thoughtful design solutions. They truly understand how to create spaces that feel both elegant and comfortable.",
-      name: "James Kim",
-      designation: "Property Developer at DataPro Living",
-      src: BedroomImage5,
-    },
-    {
-      quote:
-        "The design process was smooth and the results exceeded our expectations. The team’s creativity and attention to detail are unmatched.",
-      name: "Michael Rodriguez",
-      designation: "Interior Designer at Urban Spaces",
-      src: Wall1,
-    },
-    {
-      quote:
-        "The new layout has significantly improved the functionality and ambiance of our office. The designs are modern yet practical.",
-      name: "Emily Watson",
-      designation: "Office Manager at CloudScale Interiors",
-      src: LivingRoomImage2,
-    },
-    {
-      quote:
-        "Exceptional craftsmanship and thoughtful design solutions. They truly understand how to create spaces that feel both elegant and comfortable.",
-      name: "James Kim",
-      designation: "Property Developer at DataPro Living",
-      src: BedroomImage2,
-    },
-    {
-      quote:
-        "The kitchen redesign brought new life to our home. The blend of aesthetics and functionality makes cooking and entertaining a joy every day.",
-      name: "Lisa Thompson",
-      designation: "Kitchen Specialist at FutureNet Designs",
-      src: KitchenImage2,
-    },
+        "The leadership and strategic vision demonstrated by the team have been outstanding. Their ability to drive growth while maintaining high standards is truly impressive.",
+      name: "Muhammed Afnaj Chooriyan",
+      designation: "CEO at DataPro Living",
+      src: Faju,
+    }
+,    
+{
+  quote:
+    "The accounting services were thorough and accurate, helping us streamline our finances efficiently. The team’s professionalism and attention to detail are exceptional.",
+  name: "Fathimathul Mufeedha",
+  designation: "Accountant at Urban Spaces",
+  src: Fidutty,
+}
+,
+{
+  quote:
+    "The interior design services transformed our workspace into a functional and aesthetically pleasing environment. Their creativity and attention to detail exceeded our expectations.",
+  name: "Emily Watson",
+  designation: "Interior Designer at CloudScale Interiors",
+  src:Placeholder ,
+},
+{
+  quote:
+    "The civil engineering solutions were thorough and precise, ensuring our construction projects were completed efficiently and safely. Their expertise and problem-solving skills are remarkable.",
+  name: "Arjun Menon",
+  designation: "Civil Engineer at BuildTech Solutions",
+  src: PlaceholderGirl,
+}
+
+
   ];
   
   
