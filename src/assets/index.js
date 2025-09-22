@@ -88,6 +88,11 @@ import LivingRoomImage3 from "./images/LIVING ROOM/Mr.HARIS GF LIVING ROOM.jpg"
 import StaircaseImage1 from "./images/STAIRCASE/06.jpg"
 import StaircaseImage2 from "./images/STAIRCASE/07.jpg"
 
+import Faju from "./images/personal/Chooriyan.jpg"
+import Fidutty from "./images/personal/fidutty.png"
+import Placeholder from "./images/personal/profile place holder - Copy.jpg"
+import PlaceholderGirl from "./images/personal/placeholdergirl.avif"
+
 export {
   LogoBack, LogoWhite, BedRoom, MainBackground, Wall1, Wall2, Wall3, Hall1, hall2, Livingroom1, Livingroom2,
   BathroomImage1, BathroomImage2, BathroomImage3,
@@ -100,5 +105,6 @@ export {
   ExteriorImage1, ExteriorImage2, ExteriorImage3, ExteriorImage4, ExteriorImage5, ExteriorImage6, ExteriorImage7, ExteriorImage8, ExteriorImage9, ExteriorImage10, ExteriorImage11, ExteriorImage12, ExteriorImage13, ExteriorImage14, ExteriorImage15, ExteriorImage16, ExteriorImage17, ExteriorImage18, ExteriorImage19, ExteriorImage20, ExteriorImage21,
   KitchenImage1, KitchenImage2, KitchenImage3,
   LivingRoomImage1, LivingRoomImage2, LivingRoomImage3,
-  StaircaseImage1, StaircaseImage2
+  StaircaseImage1, StaircaseImage2,
+  Faju,Fidutty,Placeholder,PlaceholderGirl
 }
