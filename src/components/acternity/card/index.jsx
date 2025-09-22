@@ -5,9 +5,9 @@ export function AnimatedTestimonialsDemo() {
   const testimonials = [
     {
       quote:
-        "The leadership and strategic vision demonstrated by the team have been outstanding. Their ability to drive growth while maintaining high standards is truly impressive.",
-      name: "Muhammed Afnaj Chooriyan",
-      designation: "CEO at DataPro Living",
+        "As CEO of CAM Design and an interior designer, I lead a team with vision and dedication, driving growth while maintaining high standards.We create spaces with creativity, style, and functionality, ensuring every project exceeds expectations." ,
+             name: "Muhammed Afnaj Chooriyan",
+      designation: "CEO OF CAM DESIGN",
       src: Faju,
     }
 ,    
