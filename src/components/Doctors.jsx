@@ -102,10 +102,10 @@ const Doctors = () => {
           ) : (
             <>
               <h1 className=" text-4xl font-semibold text-center lg:text-start">
-                Our Interior Design Experts
+                Our Interior Design 
               </h1>
               <p className=" mt-2 text-center lg:text-start">
-                Meet our talented team of interior design professionals who transform spaces into beautiful, functional environments.
+                Explore our gallery of stunning interior design images, showcasing creative transformations and inspiring spaces.
               </p>
             </>
           )}
@@ -138,7 +138,7 @@ const Doctors = () => {
           <Slider ref={slider} {...settings}>
             {data.map((e, index) => (
               <div
-                className="h-[380px] text-black rounded-xl shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] mb-2 cursor-pointer hover:shadow-[rgba(0,_0,_0,_0.35)_0px_5px_15px] transition-all duration-300 bg-white"
+                className="h-[30px] text-black rounded-xl shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] mb-2 cursor-pointer hover:shadow-[rgba(0,_0,_0,_0.35)_0px_5px_15px] transition-all duration-300 bg-white"
                 key={index}
               >
                 <div className="relative overflow-hidden">
@@ -149,13 +149,15 @@ const Doctors = () => {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-t-xl"></div>
                 </div>
-
+{/* 
                 <div className=" flex flex-col justify-center items-center p-4">
                   <h1 className=" font-semibold text-xl pt-2 text-gray-800">{e.name}</h1>
                   <h3 className=" pt-2 text-gray-600 text-center text-sm font-medium">{e.specialties}</h3>
                   <div className="mt-3 w-12 h-1 bg-gradient-to-r from-amber-400 to-orange-500 rounded-full"></div>
-                </div>
+                </div> */}
+
               </div>
+
             ))}
           </Slider>
         )}

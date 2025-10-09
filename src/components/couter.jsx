@@ -1,16 +1,16 @@
 import { useState, useEffect, useRef, useCallback } from 'react';
 
 const targetCounts = {
-  happyClients: 25000,
-  totalRooms: 160,
-  awardsWon: 28,
-  teamMembers: 100
+  happyClients: 512,
+  totalProject: 85,
+  awardsWon: 12,
+  teamMembers: 7
 };
 
 const Counter = () => {
   const [counts, setCounts] = useState({
     happyClients: 0,
-    totalRooms: 0,
+    totalproject: 0,
     awardsWon: 0,
     teamMembers: 0
   });
@@ -42,7 +42,7 @@ const Counter = () => {
 
     // Start animations with slight delays for staggered effect
     setTimeout(() => animateCount('happyClients', targetCounts.happyClients), 100);
-    setTimeout(() => animateCount('totalRooms', targetCounts.totalRooms), 200);
+    setTimeout(() => animateCount('totalproject', targetCounts.totalProject), 200);
     setTimeout(() => animateCount('awardsWon', targetCounts.awardsWon), 300);
     setTimeout(() => animateCount('teamMembers', targetCounts.teamMembers), 400);
   }, []);
@@ -107,12 +107,12 @@ const Counter = () => {
               <div className="absolute inset-0 bg-orange-100 rounded-full blur-lg opacity-30 group-hover:opacity-50 transition-opacity duration-300"></div>
               <div className="relative">
                 <div className="text-4xl md:text-5xl font-bold text-orange-500 mb-2">
-                  {counts.totalRooms}
+                  {counts.totalproject}
                 </div>
               </div>
             </div>
             <p className="text-gray-600 text-sm md:text-base font-medium">
-              Total Rooms
+              Total Project
             </p>
           </div>
 
