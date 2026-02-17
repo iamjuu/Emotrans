@@ -68,8 +68,6 @@ const App = () => {
                 <div className="   pt-[25px] md:pt-[100px]" id="blog">
                   <Blogs />
                 </div>
-              
-
                 <div className="   pt-[25px] md:pt-[100px]" id="services">
                   <Services />
                 </div>

@@ -93,7 +93,7 @@ const Home = () => {
             <Button 
               title="Connect me" 
               as="a"
-              href="https://wa.me/918593074903"
+              href="https://wa.me/971585817555"
               target="_blank"
               rel="noopener noreferrer"
             />
