@@ -1,42 +1,48 @@
 import Button from "../layouts/Button";
-import {LogisticsVideo, MainBackground} from "../assets/index.js";
-import { useState } from "react";
+import { LogisticsVideo, Logistics1 } from "../assets/index.js";
+import { useState, useRef, useEffect } from "react";
 
 const Home = () => {
-  const [isVideoLoaded, setIsVideoLoaded] = useState(false);
   const [isVideoPlaying, setIsVideoPlaying] = useState(false);
+  const videoRef = useRef(null);
 
   const handleVideoCanPlay = () => {
-    console.log('Video can play');
-    setIsVideoLoaded(true);
+    // Video ready to play
   };
 
   const handleVideoPlay = () => {
-    console.log('Video started playing');
     setIsVideoPlaying(true);
   };
 
-  const handleVideoError = (e) => {
-    console.log('Video failed to load:', e);
-    setIsVideoLoaded(true);
-    setIsVideoPlaying(true); // Show content even if video fails
-    e.target.style.display = 'none';
+  const handleVideoError = () => {
+    setIsVideoPlaying(true);
   };
 
   const handleVideoLoadStart = () => {
-    console.log('Video loading started');
-    setIsVideoLoaded(false);
     setIsVideoPlaying(false);
   };
+
+  useEffect(() => {
+    const video = videoRef.current;
+    if (!video) return;
+    const playPromise = video.play();
+    if (playPromise && typeof playPromise.then === "function") {
+      playPromise.catch(() => {
+        setIsVideoPlaying(true);
+      });
+    }
+  }, []);
+
   return (
-    <div className="relative min-h-screen   flex flex-col justify-center lg:px-32 px-5 text-white">
-      <div className="absolute inset-0 w-full h-full bg-black opacity-90 -z-20"></div>
-      {/* Fallback background image */}
-      <div 
+    <div className="relative min-h-screen flex flex-col justify-center lg:px-32 px-5 text-white overflow-hidden">
+      <div className="absolute inset-0 w-full h-full bg-black/90 -z-20" />
+      {/* Fallback background image when video fails or is loading */}
+      <div
         className="absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat opacity-90 -z-15"
-       
-      ></div>
+        style={{ backgroundImage: `url(${Logistics1})` }}
+      />
       <video
+        ref={videoRef}
         className="absolute inset-0 w-full h-full object-cover opacity-90 -z-10"
         src={LogisticsVideo}
         autoPlay
@@ -44,7 +50,7 @@ const Home = () => {
         muted
         playsInline
         preload="auto"
-        poster=""
+        poster={Logistics1}
         onError={handleVideoError}
         onLoadStart={handleVideoLoadStart}
         onCanPlay={handleVideoCanPlay}

@@ -12,7 +12,7 @@ import Footer from "./components/Footer";
 import { AnimatedTestimonialsDemo } from "./components/acternity/card";
 // import { CometCardDemo } from "./components/3dcard";
 const App = () => {
-  const whatsappNumber = "7025715250";
+  const whatsappNumber = "585817555";
   const whatsappText = encodeURIComponent("Hi, I'm interested in your services. Please provide me with more information.");
   const [isBouncing, setIsBouncing] = useState(false);
 
@@ -22,9 +22,9 @@ const App = () => {
       .replace(/\D/g, "")
       .replace(/^0+/, "");
     // Prepend default country code '91' (India) if missing; adjust if your country differs
-    const withCountryCode = digitsOnly.startsWith("91")
+    const withCountryCode = digitsOnly.startsWith("971")
       ? digitsOnly
-      : `91${digitsOnly}`;
+      : `971${digitsOnly}`;
     return `https://api.whatsapp.com/send?phone=${withCountryCode}&text=${whatsappText}`;
   };
 
@@ -49,7 +49,7 @@ const App = () => {
 
   return (
     <Router>
-      <div>
+      <div className="min-h-screen bg-gray-50">
         <Navbar />
 
         <Routes>

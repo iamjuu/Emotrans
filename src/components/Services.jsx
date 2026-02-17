@@ -14,7 +14,7 @@ const Services = () => {
     return () => clearTimeout(timer);
   }, []);
   return (
-    <div className="min-h-screen bg-white py-16 lg:py-24">
+    <div className="min-h-screen  py-16 lg:py-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Main Title - Centered */}
         <div 
