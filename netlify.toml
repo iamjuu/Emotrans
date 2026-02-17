@@ -1,0 +1,11 @@
+# Netlify build config for Vite app
+# Ensures devDependencies (including Vite) are installed so "vite build" works.
+
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+# Install devDependencies (Vite is in devDependencies)
+# Do NOT set NODE_ENV=production before install, or dev deps are skipped.
+[build.environment]
+  NPM_FLAGS = "--include=dev"
