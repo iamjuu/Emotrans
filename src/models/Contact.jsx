@@ -32,7 +32,7 @@ const Contact = ({ closeForm }) => {
       >
         <div className="bg-white rounded-2xl shadow-2xl overflow-hidden flex flex-col max-h-full">
           {/* Header */}
-          <div className="bg-gradient-to-r from-[#f97316] to-orange-600 px-8 py-4   flex-shrink-0">
+          <div className="bg-gradient-to-r from-[#41a8d1] to-orange-600 px-8 py-4   flex-shrink-0">
             <div className="flex items-center justify-between">
               <div>
                 <h1 className="text-[20px] font-bold text-white">Book Consultation</h1>
@@ -147,7 +147,7 @@ const Contact = ({ closeForm }) => {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="flex-1 bg-gradient-to-r from-[#f97316] to-orange-600 text-white   text-[12px] py-3 px-6 rounded-lg font-semibold hover:from-orange-600 hover:to-orange-700 transition-all duration-200 transform hover:scale-105 shadow-lg disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none flex items-center justify-center"
+                  className="flex-1 bg-gradient-to-r from-[#41a8d1] to-orange-600 text-white   text-[12px] py-3 px-6 rounded-lg font-semibold hover:from-orange-600 hover:to-orange-700 transition-all duration-200 transform hover:scale-105 shadow-lg disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none flex items-center justify-center"
                 >
                   {isSubmitting ? (
                     <>

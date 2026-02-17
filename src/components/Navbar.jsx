@@ -4,7 +4,7 @@ import { Link as RouterLink, useLocation } from "react-router-dom";
 import Button from "../layouts/Button";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import Contact from "../models/Contact";
-import { LogoWhite } from "../assets";
+import { LogisticsLogo } from "../assets";
 
 const Navbar = () => {
   const [menu, setMenu] = useState(false);
@@ -38,16 +38,16 @@ const Navbar = () => {
   };
 
   return (
-    <div className=" fixed w-full z-50 flex text-white bg-black/80">
+    <div className=" fixed w-full z-50 flex bg-gray-100 text-black ">
       <div className="max-w-8xl mx-auto w-full  ">
-        <div className=" flex flex-row justify-between py-2 md:px-32 px-5  shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]">
+        <div className=" flex flex-row justify-between py-2 md:px-32 px-5  ">
           <div className=" flex flex-row items-center cursor-pointer">
             {isHomePage ? (
               <Link to="home" spy={true} smooth={true} duration={500}>
                 <img 
-                  src={LogoWhite} 
-                  alt="Cam Design Logo" 
-                  className="w-8 sm:w-10 md:w-16 lg:w-20" 
+                  src={LogisticsLogo} 
+                  alt="Emotrans Logo" 
+                  className="w-8 sm:w-10 md:w-26 lg:w-32" 
                   data-aos="fade-right"
                   data-aos-delay="100"
                 />
@@ -55,8 +55,8 @@ const Navbar = () => {
             ) : (
               <RouterLink to="/">
                 <img 
-                  src={LogoWhite} 
-                  alt="Cam Design Logo" 
+                  src={LogisticsLogo} 
+                  alt="Emotrans Logo" 
                   className="w-8 sm:w-10 md:w-16 lg:w-20" 
                   data-aos="fade-right"
                   data-aos-delay="100"
@@ -71,7 +71,7 @@ const Navbar = () => {
                 <RouterLink
                   key={index}
                   to={item.to}
-                  className="text-xs sm:text-sm md:text-[14px] hover:text-hoverColor transition-all cursor-pointer"
+                  className="text-black text-xs sm:text-sm md:text-[14px] hover:text-[#41a8d1] transition-colors duration-200 cursor-pointer border-b-2 border-transparent hover:border-[#41a8d1]"
                   data-aos="fade-down"
                   data-aos-delay={200 + (index * 100)}
                 >
@@ -84,7 +84,7 @@ const Navbar = () => {
                   spy={true}
                   smooth={true}
                   duration={500}
-                  className="text-xs sm:text-sm md:text-[14px] hover:text-hoverColor transition-all cursor-pointer"
+                  className="text-black text-xs sm:text-sm md:text-[14px] hover:text-[#41a8d1] transition-colors duration-200 cursor-pointer border-b-2 border-transparent hover:border-[#41a8d1]"
                   data-aos="fade-down"
                   data-aos-delay={200 + (index * 100)}
                 >
@@ -94,7 +94,7 @@ const Navbar = () => {
                 <RouterLink
                   key={index}
                   to={`/#${item.to}`}
-                  className="text-xs sm:text-sm md:text-[14px] hover:text-hoverColor transition-all cursor-pointer"
+                  className="text-black text-xs sm:text-sm md:text-[14px] hover:text-[#41a8d1] transition-colors duration-200 cursor-pointer border-b-2 border-transparent hover:border-[#41a8d1]"
                   data-aos="fade-down"
                   data-aos-delay={200 + (index * 100)}
                 >
@@ -108,7 +108,7 @@ const Navbar = () => {
             <div className="flex items-center">
 
             <button
-              className="border-[#f97316] border text-white px-4 py-2 rounded-md hover:bg-hoverColor transition duration-300 ease-in-out"
+              className="border-[#41a8d1] border text-black px-4 py-2 rounded-md hover:bg-[#41a8d1] hover:text-white transition duration-300 ease-in-out"
               onClick={openForm}
               data-aos="fade-left"
               data-aos-delay="600"
@@ -138,7 +138,7 @@ const Navbar = () => {
               <RouterLink
                 key={index}
                 to={item.to}
-                className="text-sm sm:text-base md:text-lg hover:text-hoverColor transition-all cursor-pointer"
+                className="text-sm sm:text-base md:text-lg hover:text-[#41a8d1] transition-colors duration-200 cursor-pointer"
                 onClick={closeMenu}
               >
                 {item.name}
@@ -150,7 +150,7 @@ const Navbar = () => {
                 spy={true}
                 smooth={true}
                 duration={500}
-                className="text-sm sm:text-base md:text-lg hover:text-hoverColor transition-all cursor-pointer"
+                className="text-sm sm:text-base md:text-lg hover:text-[#41a8d1] transition-colors duration-200 cursor-pointer"
                 onClick={closeMenu}
               >
                 {item.name}
@@ -159,7 +159,7 @@ const Navbar = () => {
               <RouterLink
                 key={index}
                 to={`/#${item.to}`}
-                className="text-sm sm:text-base md:text-lg hover:text-hoverColor transition-all cursor-pointer"
+                className="text-sm sm:text-base md:text-lg hover:text-[#41a8d1] transition-colors duration-200 cursor-pointer"
                 onClick={closeMenu}
               >
                 {item.name}
@@ -169,7 +169,7 @@ const Navbar = () => {
 
           <div className=" lg:hidden">
             <button
-              className="bg-[#f97316] text-white px-4 py-2 rounded-md hover:bg-hoverColor transition duration-300 ease-in-out"
+              className="bg-[#41a8d1] text-white px-4 py-2 rounded-md hover:bg-[#2d8fb8] hover:border-[#2d8fb8] transition duration-300 ease-in-out"
               onClick={openForm}
             >
               Contact Us

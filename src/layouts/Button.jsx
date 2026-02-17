@@ -5,7 +5,7 @@ const Button = ({ title, as = "button", ...props }) => {
   return (
     <div>
       <Component 
-        className="bg-[#f97316] text-white px-4 py-2 rounded-md hover:bg-orange-700 transition duration-300 ease-in-out cursor-pointer"
+        className="bg-[#41a8d1] text-white px-4 py-2 rounded-md hover:bg-orange-700 transition duration-300 ease-in-out cursor-pointer"
         {...props}
       >
         {title}

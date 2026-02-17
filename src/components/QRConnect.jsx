@@ -73,8 +73,8 @@ const QRConnect = () => {
     if (navigator.share) {
       try {
         await navigator.share({
-          title: 'Cam Design - QR Connect',
-          text: 'Connect with Cam Design Interior Solutions',
+          title: 'Emotrans - QR Connect',
+          text: 'Connect with Emotrans Interior Solutions',
           url: qrValue
         });
       } catch (err) {
@@ -105,7 +105,7 @@ const QRConnect = () => {
             QR Connect
           </h1>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Connect with Cam Design instantly using QR codes. Scan to get in touch, 
+            Connect with Emotrans instantly using QR codes. Scan to get in touch, 
             visit our website, or share our contact information.
           </p>
         </div>

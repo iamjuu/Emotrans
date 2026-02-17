@@ -31,7 +31,7 @@ const Services = () => {
             <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-serif font-light text-gray-800 leading-tight">
               Your Gateway to Reliable
               <br />
-              <span className="text-orange-400">Logistics & Freight</span>
+              <span className="text-[#41a8d1]">Logistics & Freight</span>
             </h1>
           )}
         </div>
@@ -51,7 +51,7 @@ const Services = () => {
               </>
             ) : (
               <>
-                <p className="text-gray-600 text-base sm:text-lg lg:text-xl leading-relaxed">
+                <p className="text-gray-600 text-base sm:text-[24px] lg:text-[26px] leading-relaxed">
                   We deliver end-to-end logistics and freight solutions across road, rail, air, and sea. 
                   From warehousing and customs clearance to last-mile delivery, our team brings 
                   expertise in supply chain management, real-time tracking, and on-time delivery. 
@@ -59,7 +59,7 @@ const Services = () => {
                 </p>
                 <a 
                   href="#about" 
-                  className="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium text-lg lg:text-xl transition-colors duration-300 group w-fit"
+                  className="inline-flex items-center text-gray-600 hover:text-gray-800 font-medium text-lg lg:text-xl transition-colors duration-300 group w-fit"
                 >
                   Read About Us 
                   <svg 

@@ -7,7 +7,7 @@ export default {
         hoverColor: "#FFC000",
         brightColor: "#dd8036",
         backgroundColor: "#36ae9a",
-        secondary: "#f97316",
+        secondary: "#41a8d1",
       },
       fontFamily: {
         'manrope': ['Manrope', 'sans-serif'],

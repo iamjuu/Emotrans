@@ -91,7 +91,7 @@ const Counter = () => {
             <div className="relative inline-block">
               <div className="absolute inset-0 bg-orange-100 rounded-full blur-lg opacity-30 group-hover:opacity-50 transition-opacity duration-300"></div>
               <div className="relative">
-                <div className="text-4xl md:text-5xl font-bold text-orange-500 mb-2">
+                <div className="text-4xl md:text-5xl font-bold text-[#41a8d1] mb-2">
                   {formatNumber(counts.happyClients)}
                 </div>
               </div>
@@ -106,7 +106,7 @@ const Counter = () => {
             <div className="relative inline-block">
               <div className="absolute inset-0 bg-orange-100 rounded-full blur-lg opacity-30 group-hover:opacity-50 transition-opacity duration-300"></div>
               <div className="relative">
-                <div className="text-4xl md:text-5xl font-bold text-orange-500 mb-2">
+                <div className="text-4xl md:text-5xl font-bold text-[#41a8d1] mb-2">
                   {counts.totalproject}
                 </div>
               </div>
@@ -121,7 +121,7 @@ const Counter = () => {
             <div className="relative inline-block">
               <div className="absolute inset-0 bg-orange-100 rounded-full blur-lg opacity-30 group-hover:opacity-50 transition-opacity duration-300"></div>
               <div className="relative">
-                <div className="text-4xl md:text-5xl font-bold text-orange-500 mb-2">
+                <div className="text-4xl md:text-5xl font-bold text-[#41a8d1] mb-2">
                   {counts.awardsWon}
                 </div>
               </div>
@@ -136,7 +136,7 @@ const Counter = () => {
             <div className="relative inline-block">
               <div className="absolute inset-0 bg-orange-100 rounded-full blur-lg opacity-30 group-hover:opacity-50 transition-opacity duration-300"></div>
               <div className="relative">
-                <div className="text-4xl md:text-5xl font-bold text-orange-500 mb-2">
+                <div className="text-4xl md:text-5xl font-bold text-[#41a8d1] mb-2">
                   {counts.teamMembers}
                 </div>
               </div>

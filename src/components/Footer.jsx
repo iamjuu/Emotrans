@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { LogoWhite } from "../assets";
+import { LogisticsLogo } from "../assets";
 const Footer = () => {
   const [showToast, setShowToast] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -22,34 +22,48 @@ const Footer = () => {
   return (
     <>
       
-      <div className="w-full bg-[#2b2f20] text-white mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
+      <div className="w-full bg-gray-100 text-black mx-auto md:px-32 px-5 sm:py-12">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-6 sm:gap-8">
           {/* Company Information */}
           <div 
             className="sm:col-span-2 lg:col-span-1 xl:col-span-1"
           >
             <div className="flex items-center mb-4 sm:mb-6">
-              <img src={LogoWhite} alt="Emotrans Logo" className=" w-20" />
+              <img src={LogisticsLogo} alt="Emotrans Logo" className=" w-32" />
             </div>
             <div className="space-y-3 text-sm">
               <div className="flex items-start">
-                <svg className="w-4 h-4 text-secondary mt-1 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <svg className="w-4 h-4 text-gray-600 mt-1 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
                 </svg>
-                <span className="leading-relaxed">Edakked Railway Gate Beach Road, Edakkad, Kannur, Kerala</span>
+                <span className="leading-relaxed">Bank in Dubai, United Arab Emirates</span>
               </div>
               <div className="flex items-center">
-                <svg className="w-4 h-4 text-secondary mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <svg className="w-4 h-4 text-gray-600 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                   <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
                   <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
                 </svg>
                 <span>designcam.7@gmail.com</span>
               </div>
               <div className="flex items-center">
-                <svg className="w-4 h-4 text-secondary mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <svg className="w-4 h-4 text-gray-600 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                   <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
                 </svg>
-                <span>+91 859 3074 903</span>
+                <span>+971 58 581 7555</span>
+              </div>
+
+              <div className="flex items-center">
+                {/* <svg className="w-4 h-4 text-gray-600 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+                </svg> */}
+                <span>PO Box : 97037</span>
+              </div>
+
+              <div className="flex items-center">
+                {/* <svg className="w-4 h-4 text-gray-600 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+                </svg> */}
+                <span>Office 915</span>
               </div>
             </div>
           </div>
@@ -58,7 +72,7 @@ const Footer = () => {
           <div 
             className="sm:col-span-1 lg:col-span-1 xl:col-span-1"
           >
-            <h2 className="text-[#f97316] font-bold text-base sm:text-lg mb-3 sm:mb-4">Services</h2>
+            <h2 className="text-black font-bold text-base sm:text-lg mb-3 sm:mb-4">Services</h2>
             <div className="space-y-2 text-sm">
               <span className="block py-1">Road Freight</span>
               <span className="block py-1">Air Cargo</span>
@@ -73,7 +87,7 @@ const Footer = () => {
           <div 
             className="sm:col-span-1 lg:col-span-1 xl:col-span-1"
           >
-            <h2 className="text-[#f97316] font-bold text-base sm:text-lg mb-3 sm:mb-4">Emotrans</h2>
+            <h2 className="text-black font-bold text-base sm:text-lg mb-3 sm:mb-4">Emotrans</h2>
             <div className="space-y-2 text-sm">
               <span className="block py-1">About Us</span>
               <span className="block py-1">Our Services</span>
@@ -85,7 +99,7 @@ const Footer = () => {
           <div 
             className="sm:col-span-2 lg:col-span-1 xl:col-span-1"
           >
-            <h2 className="text-[#f97316] font-bold text-base sm:text-lg mb-3 sm:mb-4">Our Social Media</h2>
+            <h2 className="text-black font-bold text-base sm:text-lg mb-3 sm:mb-4">Our Social Media</h2>
             <div className="space-y-2 text-sm">
               <span className="flex items-center py-1">
                 <svg className="w-4 h-4 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
@@ -118,21 +132,21 @@ const Footer = () => {
           <div 
             className="sm:col-span-2 lg:col-span-1 xl:col-span-1"
           >
-            <h1 className="text-[#f97316] font-bold text-base sm:text-lg mb-3 sm:mb-4">Join a Newsletter</h1>
+            <h1 className="text-[#41a8d1 font-bold text-base sm:text-lg mb-3 sm:mb-4">Join a Newsletter</h1>
             <form onSubmit={handleNewsletterSubmit} className="space-y-3">
               <div>
-                <label className="block text-sm text-gray-300 mb-2">Your Email</label>
+                <label className="block text-sm text-gray-600 mb-2">Your Email</label>
                 <input
                   type="email"
                   placeholder="Enter Your Email"
-                  className="w-full px-3 py-2.5 border border-secondary rounded focus:outline-none focus:border-secondary text-sm text-gray-900 placeholder-gray-500"
+                  className="w-full px-3 py-2.5 border border-[#41a8d1] rounded focus:outline-none focus:border-[#41a8d1] text-sm text-gray-900 placeholder-gray-500"
                   required
                 />
               </div>
               <button 
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full bg-secondary text-white px-4 py-2.5 rounded hover:bg-orange-700 bg-orange-600 transition-colors text-sm font-medium disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center"
+                className="w-full bg-[#41a8d1] text-white px-4 py-2.5 rounded hover:bg-[#36ae9a] transition-colors text-sm font-medium disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center"
               >
                 {isSubmitting ? (
                   <>
@@ -146,7 +160,7 @@ const Footer = () => {
                   'Send'
                 )}
               </button>
-              <p className="text-xs text-gray-400 mt-4">
+              <p className="text-xs text-gray-600 mt-4">
                 Copyright Emotrans
               </p>
             </form>
