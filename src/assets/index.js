@@ -7,6 +7,8 @@ import hall2 from "./images/hall2.jpg"
 import Livingroom1 from "./images/livingroom.jpg"
 import Livingroom2 from "./images/livingroom1.jpg"
 import BedRoom from './images/bedroom1.jpg'
+import OfficeRoom from "./images/officeroom.jpg"
+import Table from "./images/table.jpg"
 import LogoBack from "../assets/images/logoblack.png"
 import LogoWhite from "../assets/images/logowhite.jpg"
 
@@ -88,13 +90,48 @@ import LivingRoomImage3 from "./images/LIVING ROOM/Mr.HARIS GF LIVING ROOM.jpg"
 import StaircaseImage1 from "./images/STAIRCASE/06.jpg"
 import StaircaseImage2 from "./images/STAIRCASE/07.jpg"
 
+// LOGISTICS Images
+import LogisticsVideo from "./images/logistics/Logistics Stock Video Of Roadways AirWays Seaways Railways - Cargo.mp4"
+import Logistics1 from "./images/logistics/pexels-aan-amrin-383798812-14801547.jpg"
+import Logistics2 from "./images/logistics/pexels-alfinauzikri-5696170.jpg"
+import Logistics3 from "./images/logistics/pexels-artempodrez-5025493.jpg"
+import Logistics4 from "./images/logistics/pexels-artempodrez-5025641.jpg"
+import Logistics5 from "./images/logistics/pexels-bill-powers-132132499-11432049.jpg"
+import Logistics6 from "./images/logistics/pexels-dibert-1117210.jpg"
+import Logistics7 from "./images/logistics/pexels-felix-haumann-1938529-3735930.jpg"
+import Logistics8 from "./images/logistics/pexels-frans-van-heerden-201846-1624695.jpg"
+import Logistics9 from "./images/logistics/pexels-frans-van-heerden-201846-2881632.jpg"
+import Logistics10 from "./images/logistics/pexels-kampus-7843960.jpg"
+import Logistics11 from "./images/logistics/pexels-pavel-danilyuk-6407584.jpg"
+import Logistics12 from "./images/logistics/pexels-rdne-8783533 (1).jpg"
+import Logistics13 from "./images/logistics/pexels-rdne-8783533.jpg"
+import Logistics14 from "./images/logistics/pexels-samuel-wolfl-628277-1427541 (1).jpg"
+import Logistics15 from "./images/logistics/pexels-screeny42-11053640.jpg"
+import Logistics16 from "./images/logistics/pexels-tima-miroshnichenko-6169048.jpg"
+import Logistics17 from "./images/logistics/pexels-tima-miroshnichenko-6169058.jpg"
+import Logistics18 from "./images/logistics/pexels-tima-miroshnichenko-6169191.jpg"
+import Logistics19 from "./images/logistics/pexels-tima-miroshnichenko-6169663.jpg"
+import Logistics20 from "./images/logistics/pexels-tima-miroshnichenko-6169668 (1).jpg"
+
+// LOGO Images
+import CamLogo01 from "./images/LOGO/CAM LOGO 01.jpg"
+import CamLogo02 from "./images/LOGO/CAM LOGO 02.jpg"
+import CamLogo03 from "./images/LOGO/CAM LOGO 03.jpg"
+import Logo001 from "./images/LOGO/logo 001.png"
+import Logo01 from "./images/LOGO/logo 01.png"
+import Logo02 from "./images/LOGO/logo 02.png"
+import Logo03 from "./images/LOGO/logo 03.png"
+
 import Faju from "./images/personal/Chooriyan.jpg"
+import FajuJpg from "./images/personal/faju.jpg"
+import Faju1 from "./images/personal/faju1.png"
 import Fidutty from "./images/personal/fidutty.png"
 import Placeholder from "./images/personal/profile place holder - Copy.jpg"
 import PlaceholderGirl from "./images/personal/placeholdergirl.avif"
 
 export {
-  LogoBack, LogoWhite, BedRoom, MainBackground, Wall1, Wall2, Wall3, Hall1, hall2, Livingroom1, Livingroom2,
+  LogisticsVideo,
+  LogoBack, LogoWhite, BedRoom, OfficeRoom, Table, MainBackground, Wall1, Wall2, Wall3, Hall1, hall2, Livingroom1, Livingroom2,
   BathroomImage1, BathroomImage2, BathroomImage3,
   BedroomImage1, BedroomImage2, BedroomImage3, BedroomImage4, BedroomImage5, BedroomImage6, BedroomImage7,
   CafeImage1, CafeImage2,
@@ -106,5 +143,7 @@ export {
   KitchenImage1, KitchenImage2, KitchenImage3,
   LivingRoomImage1, LivingRoomImage2, LivingRoomImage3,
   StaircaseImage1, StaircaseImage2,
-  Faju,Fidutty,Placeholder,PlaceholderGirl
+  Logistics1, Logistics2, Logistics3, Logistics4, Logistics5, Logistics6, Logistics7, Logistics8, Logistics9, Logistics10, Logistics11, Logistics12, Logistics13, Logistics14, Logistics15, Logistics16, Logistics17, Logistics18, Logistics19, Logistics20,
+  CamLogo01, CamLogo02, CamLogo03, Logo001, Logo01, Logo02, Logo03,
+  Faju, FajuJpg, Faju1, Fidutty, Placeholder, PlaceholderGirl
 }

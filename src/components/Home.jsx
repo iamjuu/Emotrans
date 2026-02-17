@@ -1,5 +1,5 @@
 import Button from "../layouts/Button";
-import {MainBackground} from "../assets/index.js";
+import {LogisticsVideo, MainBackground} from "../assets/index.js";
 import { useState } from "react";
 
 const Home = () => {
@@ -38,7 +38,7 @@ const Home = () => {
       ></div>
       <video
         className="absolute inset-0 w-full h-full object-cover opacity-90 -z-10"
-        src={MainBackground}
+        src={LogisticsVideo}
         autoPlay
         loop
         muted

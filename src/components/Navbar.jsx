@@ -38,7 +38,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className=" fixed w-full z-50 flex text-white bg-[#2b2f20]">
+    <div className=" fixed w-full z-50 flex text-white bg-black/80">
       <div className="max-w-8xl mx-auto w-full  ">
         <div className=" flex flex-row justify-between py-2 md:px-32 px-5  shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]">
           <div className=" flex flex-row items-center cursor-pointer">
