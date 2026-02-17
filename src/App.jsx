@@ -12,8 +12,8 @@ import Footer from "./components/Footer";
 import { AnimatedTestimonialsDemo } from "./components/acternity/card";
 // import { CometCardDemo } from "./components/3dcard";
 const App = () => {
-  const whatsappNumber = "8593074903";
-  const whatsappText = encodeURIComponent("Hi t");
+  const whatsappNumber = "7025715250";
+  const whatsappText = encodeURIComponent("Hi, I'm interested in your services. Please provide me with more information.");
   const [isBouncing, setIsBouncing] = useState(false);
 
   // Normalize the WhatsApp number to international format without '+' or leading zeros
