@@ -1,38 +1,36 @@
-import { BedroomImage2, BedroomImage5, KitchenImage2, LivingRoomImage2, Wall1,Faju,Fidutty,Placeholder,PlaceholderGirl } from "../../../assets";
+import { Logistics1, Logistics5, Logistics8, Logistics11 } from "../../../assets";
 import { AnimatedTestimonials } from "../../../ui/animated-testimonials/animated-testimonials";
 
 export function AnimatedTestimonialsDemo() {
   const testimonials = [
     {
       quote:
-        "As CEO of CAM Design and an interior designer, I lead a team with vision and dedication, driving growth while maintaining high standards.We create spaces with creativity, style, and functionality, ensuring every project exceeds expectations." ,
-             name: "Muhammed Afnaj Chooriyan",
-      designation: "CEO OF CAM DESIGN",
-      src: Faju,
+        "As CEO of our logistics company, I lead a team focused on reliable freight and supply chain solutions. We deliver across road, rail, air, and sea with transparency and on-time performance, ensuring every shipment meets our clients' expectations.",
+      name: "Muhammed Afnaj Chooriyan",
+      designation: "CEO, Emotrans Logistics",
+      src: Logistics1,
+    },
+    {
+      quote:
+        "Their logistics and operations support helped us streamline our supply chain and cut costs. The team’s professionalism, real-time tracking, and attention to detail are exceptional.",
+      name: "Fathimathul Mufeedha",
+      designation: "Logistics Coordinator, Urban Freight",
+      src: Logistics5,
+    },
+    {
+      quote:
+        "Their freight and last-mile delivery services transformed how we fulfill orders. Reliable tracking, on-time delivery, and clear communication exceeded our expectations.",
+      name: "Emily Watson",
+      designation: "Operations Manager, CloudScale Retail",
+      src: Logistics8,
+    },
+    {
+      quote:
+        "Warehousing and multimodal freight solutions were delivered on time and within budget. Their expertise in customs and end-to-end logistics is remarkable.",
+      name: "Arjun Menon",
+      designation: "Supply Chain Manager, BuildTech Solutions",
+      src: Logistics11,
     }
-,    
-{
-  quote:
-    "The accounting services were thorough and accurate, helping us streamline our finances efficiently. The team’s professionalism and attention to detail are exceptional.",
-  name: "Fathimathul Mufeedha",
-  designation: "Accountant at Urban Spaces",
-  src: Fidutty,
-}
-,
-{
-  quote:
-    "The interior design services transformed our workspace into a functional and aesthetically pleasing environment. Their creativity and attention to detail exceeded our expectations.",
-  name: "Emily Watson",
-  designation: "Interior Designer at CloudScale Interiors",
-  src:Placeholder ,
-},
-{
-  quote:
-    "The civil engineering solutions were thorough and precise, ensuring our construction projects were completed efficiently and safely. Their expertise and problem-solving skills are remarkable.",
-  name: "Arjun Menon",
-  designation: "Civil Engineer at BuildTech Solutions",
-  src: PlaceholderGirl,
-}
 
 
   ];

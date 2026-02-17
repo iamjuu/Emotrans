@@ -91,6 +91,7 @@ import StaircaseImage1 from "./images/STAIRCASE/06.jpg"
 import StaircaseImage2 from "./images/STAIRCASE/07.jpg"
 
 // LOGISTICS Images
+import LogisticsLogo from "./images/logistics/emotranslogo.png"
 import LogisticsVideo from "./images/logistics/Logistics Stock Video Of Roadways AirWays Seaways Railways - Cargo.mp4"
 import Logistics1 from "./images/logistics/pexels-aan-amrin-383798812-14801547.jpg"
 import Logistics2 from "./images/logistics/pexels-alfinauzikri-5696170.jpg"
@@ -130,6 +131,7 @@ import Placeholder from "./images/personal/profile place holder - Copy.jpg"
 import PlaceholderGirl from "./images/personal/placeholdergirl.avif"
 
 export {
+  LogisticsLogo,
   LogisticsVideo,
   LogoBack, LogoWhite, BedRoom, OfficeRoom, Table, MainBackground, Wall1, Wall2, Wall3, Hall1, hall2, Livingroom1, Livingroom2,
   BathroomImage1, BathroomImage2, BathroomImage3,

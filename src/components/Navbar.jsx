@@ -13,11 +13,11 @@ const Navbar = () => {
   const isHomePage = location.pathname === '/';
 
   const navItems = [
-    { name: "Home", to: "home" },
+    { name: "Home", to: "/" },
     { name: "About Us", to: "about" },
     { name: "Services", to: "services" },
     { name: "Blog", to: "blog" },
-    { name: "QR Connect", to: "/qr-connect", isRoute: true }
+    // { name: "QR Connect", to: "/qr-connect", isRoute: true }
   ];
 
   const handleChange = () => {

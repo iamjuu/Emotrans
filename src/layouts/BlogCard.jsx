@@ -56,10 +56,10 @@ const BlogCard = ({ img, headlines, description, category, onViewDesign }) => {
 
           {/* Content Container */}
           <div className="p-6 space-y-3">
-            <h2 className="text-xl font-bold text-gray-800 group-hover:text-blue-600 transition-colors duration-300 line-clamp-2">
+            <h2 className="text-[20px] font-bold text-gray-800 group-hover:text-blue-600 transition-colors duration-300 line-clamp-2">
               {headlines}
             </h2>
-            <p className="text-gray-600 text-sm leading-relaxed line-clamp-3">
+            <p className="text-gray-600 text-[14px] md:text-[18px] leading-relaxed line-clamp-3">
               {description}
             </p>
             

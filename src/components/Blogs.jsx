@@ -3,24 +3,10 @@ import DesignModal from "./DesignModal";
 import { useDesignModal } from "../hooks/useDesignModal";
 import { useState, useEffect } from "react";
 import { ShimmerTitle, ShimmerText, ShimmerGrid } from "./Shimmer";
-import { 
-  BathroomImage1,
-  BedroomImage1,
-  KitchenImage1,
-  LivingRoomImage1,
-  ExteriorImage1,
-  CourtyardImage1,
-  BathroomImage2, BathroomImage3,
-  BedroomImage2, BedroomImage3, BedroomImage4, BedroomImage5, BedroomImage6, BedroomImage7,
-  KitchenImage2, KitchenImage3,
-  LivingRoomImage2, LivingRoomImage3,
-  ExteriorImage2, ExteriorImage3, ExteriorImage4, ExteriorImage5, ExteriorImage6, ExteriorImage7, ExteriorImage8, ExteriorImage9, ExteriorImage10, ExteriorImage11, ExteriorImage12, ExteriorImage13, ExteriorImage14, ExteriorImage15, ExteriorImage16, ExteriorImage17, ExteriorImage18, ExteriorImage19, ExteriorImage20, ExteriorImage21,
-  CourtyardImage2, CourtyardImage3, CourtyardImage4,
-  DiningImage1, DiningImage2, DiningImage3,
-  DressingImage1, DressingImage2, DressingImage3, DressingImage4, DressingImage5,
-  StaircaseImage1, StaircaseImage2,
-  CommercialImage1, CommercialImage2, CommercialImage3,
-  CafeImage1, CafeImage2
+import {
+  Logistics1, Logistics2, Logistics3, Logistics4, Logistics5, Logistics6,
+  Logistics7, Logistics8, Logistics9, Logistics10, Logistics11, Logistics15,
+  Logistics16, Logistics17, Logistics18
 } from "../assets";
 
 const Blogs = () => {
@@ -36,40 +22,25 @@ const Blogs = () => {
     return () => clearTimeout(timer);
   }, []);
 
-  // Define image collections for each category
+  // Define image collections for each logistics category
   const imageCollections = {
-    bedroom: {
-      images: [BedroomImage1, BedroomImage2, BedroomImage3, BedroomImage4, BedroomImage5, BedroomImage6, BedroomImage7]
+    road: {
+      images: [Logistics1, Logistics2, Logistics6]
     },
-    livingroom: {
-      images: [LivingRoomImage1, LivingRoomImage2, LivingRoomImage3]
+    air: {
+      images: [Logistics5, Logistics7]
     },
-    kitchen: {
-      images: [KitchenImage1, KitchenImage2, KitchenImage3]
+    sea: {
+      images: [Logistics8, Logistics9]
     },
-    bathroom: {
-      images: [BathroomImage1, BathroomImage2, BathroomImage3]
+    rail: {
+      images: [Logistics3, Logistics4]
     },
-    exterior: {
-      images: [ExteriorImage1, ExteriorImage2, ExteriorImage3, ExteriorImage4, ExteriorImage5, ExteriorImage6, ExteriorImage7, ExteriorImage8, ExteriorImage9, ExteriorImage10, ExteriorImage11, ExteriorImage12, ExteriorImage13, ExteriorImage14, ExteriorImage15, ExteriorImage16, ExteriorImage17, ExteriorImage18, ExteriorImage19, ExteriorImage20, ExteriorImage21]
+    warehousing: {
+      images: [Logistics10, Logistics11, Logistics15]
     },
-    courtyard: {
-      images: [CourtyardImage1, CourtyardImage2, CourtyardImage3, CourtyardImage4]
-    },
-    dining: {
-      images: [DiningImage1, DiningImage2, DiningImage3]
-    },
-    dressing: {
-      images: [DressingImage1, DressingImage2, DressingImage3, DressingImage4, DressingImage5]
-    },
-    staircase: {
-      images: [StaircaseImage1, StaircaseImage2]
-    },
-    commercial: {
-      images: [CommercialImage1, CommercialImage2, CommercialImage3]
-    },
-    cafe: {
-      images: [CafeImage1, CafeImage2]
+    lastmile: {
+      images: [Logistics16, Logistics17, Logistics18]
     }
   };
 
@@ -88,10 +59,10 @@ const Blogs = () => {
           ) : (
             <>
               <h1 className=" text-4xl font-semibold text-center lg:text-start">
-                Our Designs
+                Our Services
               </h1>
-              <p className=" mt-2 text-center lg:text-start">
-                Discover our latest interior design projects and creative solutions that transform spaces into beautiful, functional environments tailored to your lifestyle.
+              <p className=" mt-2 text-[14px] md:text-[24px] text-center lg:text-start">
+                Explore our logistics solutions—road, air, sea, rail, warehousing, and last-mile delivery. Reliable freight and supply chain services to keep your business moving.
               </p>
             </>
           )}
@@ -109,55 +80,55 @@ const Blogs = () => {
           <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
             <div data-aos="fade-up" data-aos-delay="300">
               <BlogCard 
-                img={BedroomImage1} 
-                headlines="Modern Bedroom Design" 
-                description="Transform your bedroom into a serene sanctuary with contemporary design elements and calming aesthetics."
-                category="bedroom"
+                img={Logistics1} 
+                headlines="Road Freight" 
+                description="Door-to-door road logistics with reliable carriers and real-time tracking for domestic and cross-border shipments."
+                category="road"
                 onViewDesign={openModal}
               />
             </div>
             <div data-aos="fade-up" data-aos-delay="400">
               <BlogCard 
-                img={LivingRoomImage1} 
-                headlines="Elegant Living Room" 
-                description="Create a sophisticated living space that combines comfort with style for the perfect family gathering area."
-                category="livingroom"
+                img={Logistics5} 
+                headlines="Air Cargo" 
+                description="Fast air freight for time-sensitive cargo. We handle documentation, customs, and delivery to major hubs worldwide."
+                category="air"
                 onViewDesign={openModal}
               />
             </div>
             <div data-aos="fade-up" data-aos-delay="500">
               <BlogCard
-                img={KitchenImage1}
-                headlines="Modern Kitchen Design"
-                description="Discover how to elevate your kitchen with premium materials and thoughtful design details."
-                category="kitchen"
+                img={Logistics8}
+                headlines="Sea Freight"
+                description="Cost-effective ocean shipping for bulk and containerized cargo. FCL and LCL options with full visibility."
+                category="sea"
                 onViewDesign={openModal}
               />
             </div>
             <div data-aos="fade-up" data-aos-delay="600">
               <BlogCard 
-                img={BathroomImage1} 
-                headlines="Luxury Bathroom" 
-                description="Make a stunning impression with an impressive bathroom design that reflects your personal style."
-                category="bathroom"
+                img={Logistics3} 
+                headlines="Rail Freight" 
+                description="Efficient rail solutions for long-haul and intermodal moves. Sustainable and reliable for heavy and bulk goods."
+                category="rail"
                 onViewDesign={openModal}
               />
             </div>
             <div data-aos="fade-up" data-aos-delay="700">
               <BlogCard 
-                img={ExteriorImage1} 
-                headlines="Exterior Design" 
-                description="Design a functional and beautiful exterior that seamlessly connects with your home's architecture."
-                category="exterior"
+                img={Logistics11} 
+                headlines="Warehousing" 
+                description="Secure storage, inventory management, and order fulfillment. Scale with flexible space and integrated systems."
+                category="warehousing"
                 onViewDesign={openModal}
               />
             </div>
             <div data-aos="fade-up" data-aos-delay="800">
               <BlogCard 
-                img={CourtyardImage1} 
-                headlines="Courtyard Design" 
-                description="Create a beautiful outdoor space that inspires relaxation and enhances your home experience."
-                category="courtyard"
+                img={Logistics16} 
+                headlines="Last-Mile Delivery" 
+                description="Final-leg delivery to your customers. Same-day and scheduled options with proof of delivery and tracking."
+                category="lastmile"
                 onViewDesign={openModal}
               />
             </div>

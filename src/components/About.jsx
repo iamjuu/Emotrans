@@ -1,4 +1,4 @@
-import { Wall1 } from "../assets/index.js"
+import { Logistics11 } from "../assets/index.js"
 import { useState, useEffect } from "react";
 import { ShimmerTitle, ShimmerText, ShimmerImage } from "./Shimmer";
 
@@ -33,35 +33,35 @@ const About = () => {
               About Us
             </h1>
             <p 
-              className=" text-justify lg:text-start"
+              className=" text-justify   text-[14px] md:text-[24px]  lg:text-start"
               data-aos="slide-up"
               data-aos-delay="200"
             >
-              We are passionate interior designers dedicated to transforming your living 
-              spaces into beautiful, functional, and inspiring environments. Our team 
-              combines creativity with practical design solutions to create spaces that 
-              reflect your unique personality and lifestyle needs.
+              We are a trusted logistics partner focused on moving your cargo reliably 
+              across road, rail, air, and sea. Our team combines operational expertise 
+              with modern technology to deliver end-to-end supply chain solutions that 
+              keep your business on schedule and your customers satisfied.
             </p>
             <p 
-              className="text-justify lg:text-start"
+              className="text-justify text-[14px] md:text-[24px] lg:text-start"
               data-aos="fade"
               data-aos-delay="300"
             >
-              With years of experience in residential and commercial interior design, 
-              we specialize in modern, contemporary, and traditional design styles. 
-              From concept to completion, we work closely with our clients to ensure 
-              every detail meets their vision and exceeds their expectations.
+              With years of experience in freight, warehousing, and distribution, we 
+              specialize in domestic and international shipping, last-mile delivery, 
+              and inventory management. From pickup to delivery, we work closely with 
+              our clients to ensure every shipment is tracked, on time, and handled with care.
             </p>
-            <p 
-              className="text-justify lg:text-start"
+            {/* <p 
+              className="text-justify text-[14px] md:text-[24px] lg:text-start"
               data-aos="slide-down"
               data-aos-delay="400"
             >
-              Our comprehensive services include space planning, color consultation, 
-              furniture selection, lighting design, and project management. We believe 
-              that great design should not only look beautiful but also enhance your 
-              daily life and bring joy to your home or workspace.
-            </p>
+              Our services include multimodal freight, warehousing, customs clearance, 
+              real-time tracking, and dedicated support. We believe logistics should 
+              be transparent, efficient, and scalable—so you can focus on growing 
+              your business while we handle the movement of your goods.
+            </p> */}
           </>
         )}
       </div>
@@ -75,8 +75,8 @@ const About = () => {
         ) : (
           <img 
             className=" rounded-lg" 
-            src={Wall1} 
-            alt="img" 
+            src={Logistics11} 
+            alt="Logistics and cargo delivery" 
             data-aos="slide-down"
             data-aos-delay="600"
             data-aos-duration="800"

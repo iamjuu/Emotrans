@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from "react";
-import { Livingroom1, Livingroom2, Wall2, BedRoom } from "../assets";
+import { useState, useEffect } from "react";
+import { Logistics11, Logistics5, Logistics8 } from "../assets";
 import { ShimmerTitle, ShimmerText, ShimmerImage, ShimmerButton } from "./Shimmer";
 
 const Services = () => {
@@ -29,9 +29,9 @@ const Services = () => {
             </div>
           ) : (
             <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-serif font-light text-gray-800 leading-tight">
-              CAM Designs: Your Gateway
+              Your Gateway to Reliable
               <br />
-              <span className="text-orange-400">To Beautiful Spaces</span>
+              <span className="text-orange-400">Logistics & Freight</span>
             </h1>
           )}
         </div>
@@ -52,11 +52,10 @@ const Services = () => {
             ) : (
               <>
                 <p className="text-gray-600 text-base sm:text-lg lg:text-xl leading-relaxed">
-                  Welcome to CAM Designs, where creativity meets functionality. We specialize in 
-                  transforming spaces through innovative interior and exterior design solutions. 
-                  From modern residential projects to commercial spaces, our team brings 
-                  expertise in creating beautiful, functional environments that reflect your 
-                  unique vision and lifestyle.
+                  We deliver end-to-end logistics and freight solutions across road, rail, air, and sea. 
+                  From warehousing and customs clearance to last-mile delivery, our team brings 
+                  expertise in supply chain management, real-time tracking, and on-time delivery. 
+                  Whether domestic or international, we keep your cargo moving with transparency and care.
                 </p>
                 <a 
                   href="#about" 
@@ -96,36 +95,36 @@ const Services = () => {
               </div>
             ) : (
               <div className="grid grid-cols-2 gap-3 sm:gap-4 lg:gap-6 h-80 sm:h-96 lg:h-[28rem] xl:h-[32rem]">
-                {/* Large Exterior Design Image - Bottom Left (spans 2 rows) */}
+                {/* Large logistics image - Left (spans 2 rows) */}
                 <div className="row-span-2 col-span-1">
                   <div className="relative h-full rounded-2xl lg:rounded-3xl overflow-hidden shadow-2xl group hover:shadow-3xl transition-all duration-500">
                     <img 
-                      src={Wall2} 
-                      alt="Modern exterior design with contemporary architecture" 
+                      src={Logistics11} 
+                      alt="Warehousing and logistics operations" 
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
                   </div>
                 </div>
                 
-                {/* Bedroom Image - Top Right */}
+                {/* Air / cargo - Top Right */}
                 <div className="col-span-1">
                   <div className="relative h-full rounded-2xl lg:rounded-3xl overflow-hidden shadow-2xl group hover:shadow-3xl transition-all duration-500">
                     <img 
-                      src={BedRoom} 
-                      alt="Elegant bedroom interior design" 
+                      src={Logistics5} 
+                      alt="Air cargo and freight" 
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
                   </div>
                 </div>
                 
-                {/* Living Room Interior Design Image - Bottom Right */}
+                {/* Sea freight - Bottom Right */}
                 <div className="col-span-1">
                   <div className="relative h-full rounded-2xl lg:rounded-3xl overflow-hidden shadow-2xl group hover:shadow-3xl transition-all duration-500">
                     <img 
-                      src={Livingroom1} 
-                      alt="Modern living room interior design" 
+                      src={Logistics8} 
+                      alt="Sea freight and shipping" 
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>

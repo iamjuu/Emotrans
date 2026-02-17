@@ -2,11 +2,21 @@ import { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import ImageModal from './ImageModal';
 
+const CATEGORY_LABELS = {
+  road: 'Road Freight',
+  air: 'Air Cargo',
+  sea: 'Sea Freight',
+  rail: 'Rail Freight',
+  warehousing: 'Warehousing',
+  lastmile: 'Last-Mile Delivery',
+};
+
 const DesignModal = ({ isOpen, onClose, category, imageCollections }) => {
   const [isImageModalOpen, setIsImageModalOpen] = useState(false);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   const currentCategory = imageCollections[category];
+  const modalTitle = CATEGORY_LABELS[category] || `${category?.charAt(0).toUpperCase() + category?.slice(1)} Designs`;
 
   useEffect(() => {
     if (isOpen) {
@@ -71,7 +81,7 @@ const DesignModal = ({ isOpen, onClose, category, imageCollections }) => {
         <div className="sticky top-0 bg-black  border-b border-gray-200 px-4 py-3 sm:hidden z-50">
           <div className="flex items-center justify-between">
             <h2 className="text-lg font-semibold text-gray-50 capitalize">
-              {category} Designs
+              {modalTitle}
             </h2>
             <button
               onClick={onClose}
@@ -90,7 +100,7 @@ const DesignModal = ({ isOpen, onClose, category, imageCollections }) => {
           {/* Desktop title */}
           <div className="hidden sm:block mb-6">
             <h2 className="text-2xl font-bold text-gray-900 capitalize text-center">
-              {category} Designs
+              {modalTitle}
             </h2>
           </div>
           
@@ -105,7 +115,7 @@ const DesignModal = ({ isOpen, onClose, category, imageCollections }) => {
                   <img
                     className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-300"
                     src={image}
-                    alt={`${category} Design ${index + 1}`}
+                    alt={`${modalTitle} ${index + 1}`}
                     loading="lazy"
                   />
                   {/* Hover Overlay */}

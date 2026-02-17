@@ -74,17 +74,16 @@ const Home = () => {
             data-aos="fade-up"
             data-aos-delay="200"
           >
-            Transform Your Space Into Beautiful Living Your Trusted Interior Design Partner
+            Your Trusted Logistics Partner Road, Rail, Air & Sea—Delivered
           </h1>
           <p 
             className="text-sm sm:text-base md:text-lg leading-relaxed sm:leading-relaxed"
             data-aos="fade-up"
             data-aos-delay="400"
           >
-            Create stunning interiors that reflect your unique style and personality. 
-            Our expert designers bring your vision to life with innovative solutions, 
-            premium materials, and attention to every detail. From concept to completion, 
-            we craft spaces that inspire and delight.
+            End-to-end freight and supply chain solutions that keep your business moving. 
+            We handle roadways, railways, airways, and seaways with reliable tracking, 
+            on-time delivery, and transparent pricing. From warehousing to last-mile—we deliver.
           </p>
           <div 
             className="pt-2 sm:pt-4"

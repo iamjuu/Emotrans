@@ -1,10 +1,10 @@
-import React, { useRef, useState, useEffect } from "react";
+import { useRef, useState, useEffect } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { FaArrowLeft } from "react-icons/fa";
 import { FaArrowRight } from "react-icons/fa";
-import { Hall1, hall2, Livingroom1, Wall1, Wall2, Wall3 } from "../assets";
+import { Logistics1, Logistics3, Logistics5, Logistics8, Logistics11, Logistics16 } from "../assets";
 import { ShimmerTitle, ShimmerText, ShimmerCard } from "./Shimmer";
 
 const Doctors = () => {
@@ -20,34 +20,34 @@ const Doctors = () => {
   }, []);
   const data = [
     {
-      img: Wall1,
-      name: "Dr. Sarah Williams",
-      specialties: "Interior Design Specialist",
+      img: Logistics1,
+      name: "Road Freight",
+      specialties: "Domestic & cross-border trucking",
     },
     {
-      img: Wall2,
-      name: "Dr. Michael Chen",
-      specialties: "Space Planning Expert",
+      img: Logistics3,
+      name: "Rail Freight",
+      specialties: "Long-haul & intermodal",
     },
     {
-      img: Wall3,
-      name: "Dr. Emma Thompson",
-      specialties: "Color & Texture Consultant",
+      img: Logistics5,
+      name: "Air Cargo",
+      specialties: "Express & time-critical shipping",
     },
     {
-      img: Hall1,
-      name: "Dr. James Rodriguez",
-      specialties: "Lighting Design Professional",
+      img: Logistics8,
+      name: "Sea Freight",
+      specialties: "FCL, LCL & ocean logistics",
     },
     {
-      img: hall2,
-      name: "Dr. Lisa Anderson",
-      specialties: "Furniture & Decor Specialist",
+      img: Logistics11,
+      name: "Warehousing",
+      specialties: "Storage & fulfillment",
     },
     {
-      img: Livingroom1,
-      name: "Dr. David Park",
-      specialties: "Modern Interior Architect",
+      img: Logistics16,
+      name: "Last-Mile Delivery",
+      specialties: "Final-leg & proof of delivery",
     },
   ];
 
@@ -102,10 +102,10 @@ const Doctors = () => {
           ) : (
             <>
               <h1 className=" text-4xl font-semibold text-center lg:text-start">
-                Our Interior Design 
+                Our Logistics Services
               </h1>
-              <p className=" mt-2 text-center lg:text-start">
-                Explore our gallery of stunning interior design images, showcasing creative transformations and inspiring spaces.
+              <p className=" mt-2 text-center text-[14px] md:text-[24px] lg:text-start">
+                Explore our freight and supply chain solutions—road, rail, air, sea, warehousing, and last-mile delivery.
               </p>
             </>
           )}
@@ -127,7 +127,7 @@ const Doctors = () => {
           </div>
         )}
       </div>
-      <div className=" mt-5">
+      <div className="mt-5 [&_.slick-dots]:bottom-[-42px] [&_.slick-dots_li]:m-0 [&_.slick-dots_li_button]:before:!text-gray-400 [&_.slick-dots_li.slick-active_button]:before:!text-gray-800 [&_.slick-slide]:outline-none">
         {isLoading ? (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {Array.from({ length: 6 }).map((_, index) => (
@@ -137,27 +137,22 @@ const Doctors = () => {
         ) : (
           <Slider ref={slider} {...settings}>
             {data.map((e, index) => (
-              <div
-                className="h-[30px] text-black rounded-xl shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] mb-2 cursor-pointer hover:shadow-[rgba(0,_0,_0,_0.35)_0px_5px_15px] transition-all duration-300 bg-white"
-                key={index}
-              >
-                <div className="relative overflow-hidden">
-                  <img
-                    src={e.img}
-                    alt="Interior design showcase"
-                    className=" h-56 rounded-t-xl w-full object-cover hover:scale-105 transition-transform duration-300"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-t-xl"></div>
+              <div className="px-2 sm:px-3" key={index}>
+                <div className="group bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-md hover:shadow-xl hover:border-gray-200 transition-all duration-300 cursor-pointer">
+                  <div className="relative overflow-hidden aspect-[4/3]">
+                    <img
+                      src={e.img}
+                      alt={e.name}
+                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-t-2xl" />
+                  </div>
+                  <div className="p-5">
+                    <h3 className="text-lg font-semibold text-gray-900 mb-1">{e.name}</h3>
+                    <p className="text-sm text-gray-500">{e.specialties}</p>
+                  </div>
                 </div>
-{/* 
-                <div className=" flex flex-col justify-center items-center p-4">
-                  <h1 className=" font-semibold text-xl pt-2 text-gray-800">{e.name}</h1>
-                  <h3 className=" pt-2 text-gray-600 text-center text-sm font-medium">{e.specialties}</h3>
-                  <div className="mt-3 w-12 h-1 bg-gradient-to-r from-amber-400 to-orange-500 rounded-full"></div>
-                </div> */}
-
               </div>
-
             ))}
           </Slider>
         )}
