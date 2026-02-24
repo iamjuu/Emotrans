@@ -3,7 +3,7 @@ import { FollowerPointerCard } from "../../ui/card-hover";
 
 export function FollowingPointerDemo({ content }) {
   return (
-    <div className="mx-auto w-80">
+    <div className="w-full max-w-[20rem] mx-auto">
       <FollowerPointerCard
         title={
           <TitleComponent title={content.author} avatar={content.authorAvatar} />

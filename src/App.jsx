@@ -71,7 +71,7 @@ const cardData = [
 ];
 
 const App = () => {
-  const whatsappNumber = "585817555";
+  const whatsappNumber = "0567280200";
   const whatsappText = encodeURIComponent("Hi, I'm interested in your services. Please provide me with more information.");
   const [isBouncing, setIsBouncing] = useState(false);
 
@@ -135,7 +135,7 @@ const App = () => {
                 <div className="   pt-[125px] md:pt-[10px]">
                   {/* <AnimatedTestimonialsDemo /> */}
                   <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                  <div className="grid gap-16 md:gap-20 lg:gap-24 grid-cols-4">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-1 md:gap-1 lg:gap-2 xl:gap-5">
                     {cardData.map((item) => (
                       <FollowingPointerDemo key={item.slug} content={item} />
                     ))}
