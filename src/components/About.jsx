@@ -14,7 +14,7 @@ const About = () => {
     return () => clearTimeout(timer);
   }, []);
   return (
-    <div className=" min-h-screen flex flex-col lg:flex-row justify-between  lg:px-32 px-5 pt-24 lg:pt-16 gap-5">
+    <div className="  flex flex-col lg:flex-row justify-between  lg:px-32 px-5 py-24 gap-5 text-zinc-100">
       <div className=" w-full lg:w-3/4 space-y-4">
         {isLoading ? (
           <>
@@ -24,16 +24,16 @@ const About = () => {
             <ShimmerText lines={3} />
           </>
         ) : (
-          <>
+          <div className="space-y-4 ">
             <h1 
-              className=" text-[24px] md:text-[32px] font-[500] text-center lg:text-start"
+              className=" text-[24px] md:text-[42px] font-[600] text-center lg:text-start text-[#41a8d1]"
               data-aos="fade-up"
               data-aos-delay="100"
             >
               About Us
             </h1>
             <p 
-              className=" text-justify   text-[14px] md:text-[20px]  lg:text-start"
+              className=" text-justify text-zinc-300 text-[14px] md:text-[20px]  lg:text-start"
               data-aos="slide-up"
               data-aos-delay="200"
             >
@@ -43,7 +43,7 @@ const About = () => {
               keep your business on schedule and your customers satisfied.
             </p>
             <p 
-              className="text-justify text-[14px] md:text-[20px] lg:text-start"
+              className="text-justify text-zinc-300 text-[14px] md:text-[20px] lg:text-start"
               data-aos="fade"
               data-aos-delay="300"
             >
@@ -53,7 +53,7 @@ const About = () => {
               our clients to ensure every shipment is tracked, on time, and handled with care.
             </p>
          
-          </>
+          </div>
         )}
       </div>
       <div 

@@ -14,7 +14,7 @@ const BlogCard = ({ img, headlines, description, category, onViewDesign }) => {
     return () => clearTimeout(timer);
   }, []);
   return (
-    <div className="group relative bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 ease-in-out overflow-hidden cursor-pointer hover:-translate-y-2 max-w-sm">
+    <div className="group relative bg-zinc-900 rounded-2xl shadow-lg hover:shadow-2xl border border-zinc-800 transition-all duration-500 ease-in-out overflow-hidden cursor-pointer hover:-translate-y-2 max-w-sm">
       {isLoading ? (
         <>
           {/* Image Container */}
@@ -56,10 +56,10 @@ const BlogCard = ({ img, headlines, description, category, onViewDesign }) => {
 
           {/* Content Container */}
           <div className="p-6 space-y-3">
-            <h2 className="text-[20px] font-bold text-gray-800 group-hover:text-blue-600 transition-colors duration-300 line-clamp-2">
+            <h2 className="text-[20px] font-bold text-white group-hover:text-[#41a8d1] transition-colors duration-300 line-clamp-2">
               {headlines}
             </h2>
-            <p className="text-gray-600 text-[14px] md:text-[18px] leading-relaxed line-clamp-3">
+            <p className="text-zinc-400 text-[14px] md:text-[18px] leading-relaxed line-clamp-3">
               {description}
             </p>
             
@@ -67,7 +67,7 @@ const BlogCard = ({ img, headlines, description, category, onViewDesign }) => {
             <div className="pt-2">
               <button 
                 onClick={() => onViewDesign(category)}
-                className="inline-flex items-center text-blue-600 text-sm font-medium group-hover:text-blue-700 transition-colors duration-300 hover:underline"
+                className="inline-flex items-center text-[#41a8d1] text-sm font-medium group-hover:text-[#5bb8e0] transition-colors duration-300 hover:underline"
               >
                 View Design
                 <svg className="ml-2 w-4 h-4 transform group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -78,7 +78,7 @@ const BlogCard = ({ img, headlines, description, category, onViewDesign }) => {
           </div>
 
           {/* Decorative Border */}
-          <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-blue-500 to-purple-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
+          <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-[#41a8d1] to-cyan-400 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
         </>
       )}
     </div>

@@ -45,7 +45,7 @@ const Blogs = () => {
   };
 
   return (
-    <div className=" min-h-screen flex flex-col x lg:px-32 px-5 ">
+    <div className=" min-h-screen flex flex-col x lg:px-32 px-5 text-zinc-100">
       <div className=" flex flex-col items-center lg:flex-row justify-between">
         <div
           data-aos="fade-up"
@@ -58,10 +58,10 @@ const Blogs = () => {
             </>
           ) : (
             <>
-              <h1 className=" text-[24px] md:text-[32px] font-[500] text-center lg:text-start">
+              <h1 className=" text-[24px] md:text-[32px] font-[500] text-center lg:text-start text-white">
                 Our Services
               </h1>
-              <p className=" mt-2 text-[14px] md:text-[20px] text-center lg:text-start">
+              <p className=" mt-2 text-zinc-400 text-[14px] md:text-[20px] text-center lg:text-start">
                 Explore our logistics solutions—road, air, sea, rail, warehousing, and last-mile delivery. Reliable freight and supply chain services to keep your business moving.
               </p>
             </>

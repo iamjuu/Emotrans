@@ -89,14 +89,14 @@ const Counter = () => {
           {/* Happy Clients */}
           <div className="text-center group">
             <div className="relative inline-block">
-              <div className="absolute inset-0 bg-orange-100 rounded-full blur-lg opacity-30 group-hover:opacity-50 transition-opacity duration-300"></div>
+              <div className="absolute inset-0 bg-[#41a8d1]/30 rounded-full blur-lg opacity-30 group-hover:opacity-50 transition-opacity duration-300"></div>
               <div className="relative">
                 <div className="text-4xl md:text-5xl font-bold text-[#41a8d1] mb-2">
                   {formatNumber(counts.happyClients)}
                 </div>
               </div>
             </div>
-            <p className="text-gray-600 text-sm md:text-base font-medium">
+            <p className="text-zinc-400 text-sm md:text-base font-medium">
               Happy Clients
             </p>
           </div>
@@ -104,14 +104,14 @@ const Counter = () => {
           {/* Total Rooms */}
           <div className="text-center group">
             <div className="relative inline-block">
-              <div className="absolute inset-0 bg-orange-100 rounded-full blur-lg opacity-30 group-hover:opacity-50 transition-opacity duration-300"></div>
+              <div className="absolute inset-0 bg-[#41a8d1]/30 rounded-full blur-lg opacity-30 group-hover:opacity-50 transition-opacity duration-300"></div>
               <div className="relative">
                 <div className="text-4xl md:text-5xl font-bold text-[#41a8d1] mb-2">
                   {counts.totalproject}
                 </div>
               </div>
             </div>
-            <p className="text-gray-600 text-sm md:text-base font-medium">
+            <p className="text-zinc-400 text-sm md:text-base font-medium">
               Total Project
             </p>
           </div>
@@ -119,14 +119,14 @@ const Counter = () => {
           {/* Awards Won */}
           <div className="text-center group">
             <div className="relative inline-block">
-              <div className="absolute inset-0 bg-orange-100 rounded-full blur-lg opacity-30 group-hover:opacity-50 transition-opacity duration-300"></div>
+              <div className="absolute inset-0 bg-[#41a8d1]/30 rounded-full blur-lg opacity-30 group-hover:opacity-50 transition-opacity duration-300"></div>
               <div className="relative">
                 <div className="text-4xl md:text-5xl font-bold text-[#41a8d1] mb-2">
                   {counts.awardsWon}
                 </div>
               </div>
             </div>
-            <p className="text-gray-600 text-sm md:text-base font-medium">
+            <p className="text-zinc-400 text-sm md:text-base font-medium">
               Awards Won
             </p>
           </div>
@@ -134,14 +134,14 @@ const Counter = () => {
           {/* Team Members */}
           <div className="text-center group">
             <div className="relative inline-block">
-              <div className="absolute inset-0 bg-orange-100 rounded-full blur-lg opacity-30 group-hover:opacity-50 transition-opacity duration-300"></div>
+              <div className="absolute inset-0 bg-[#41a8d1]/30 rounded-full blur-lg opacity-30 group-hover:opacity-50 transition-opacity duration-300"></div>
               <div className="relative">
                 <div className="text-4xl md:text-5xl font-bold text-[#41a8d1] mb-2">
                   {counts.teamMembers}
                 </div>
               </div>
             </div>
-            <p className="text-gray-600 text-sm md:text-base font-medium">
+            <p className="text-zinc-400 text-sm md:text-base font-medium">
               Team Members
             </p>
           </div>

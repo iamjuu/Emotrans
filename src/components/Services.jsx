@@ -28,7 +28,7 @@ const Services = () => {
               <ShimmerTitle className="h-16 w-1/2 mx-auto" />
             </div>
           ) : (
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-serif font-light text-gray-800 leading-tight">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-serif font-light text-white leading-tight">
               Your Gateway to Reliable
               <br />
               <span className="text-[#41a8d1]">Logistics & Freight</span>
@@ -51,7 +51,7 @@ const Services = () => {
               </>
             ) : (
               <>
-                <p className="text-gray-600 text-[14px] md:text-[20px] leading-relaxed">
+                <p className="text-zinc-400 text-[14px] md:text-[20px] leading-relaxed">
                   We deliver end-to-end logistics and freight solutions across road, rail, air, and sea. 
                   From warehousing and customs clearance to last-mile delivery, our team brings 
                   expertise in supply chain management, real-time tracking, and on-time delivery. 
@@ -59,7 +59,7 @@ const Services = () => {
                 </p>
                 <a 
                   href="#about" 
-                  className="inline-flex items-center text-gray-600 hover:text-gray-800 font-medium text-lg lg:text-xl transition-colors duration-300 group w-fit"
+                  className="inline-flex items-center text-zinc-400 hover:text-[#41a8d1] font-medium text-lg lg:text-xl transition-colors duration-300 group w-fit"
                 >
                   Read About Us 
                   <svg 
@@ -96,7 +96,7 @@ const Services = () => {
                 </div>
                 <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6 py-6 sm:py-8">
                   {[1, 2, 3, 4].map((i) => (
-                    <div key={i} className="h-14 sm:h-16 bg-gray-200 rounded animate-pulse" />
+                    <div key={i} className="h-14 sm:h-16 bg-zinc-700 rounded animate-pulse" />
                   ))}
                 </div>
               </>

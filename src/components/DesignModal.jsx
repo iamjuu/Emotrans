@@ -85,7 +85,7 @@ const DesignModal = ({ isOpen, onClose, category, imageCollections }) => {
             </h2>
             <button
               onClick={onClose}
-              className="text-gray-500 hover:text-gray-700 transition-colors p-1"
+              className="text-zinc-400 hover:text-white transition-colors p-1"
               aria-label="Close modal"
             >
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -99,7 +99,7 @@ const DesignModal = ({ isOpen, onClose, category, imageCollections }) => {
         <div className="px-2 sm:px-4 py-4 sm:py-8 pt-16 sm:pt-8">
           {/* Desktop title */}
           <div className="hidden sm:block mb-6">
-            <h2 className="text-2xl font-bold text-gray-900 capitalize text-center">
+            <h2 className="text-2xl font-bold text-white capitalize text-center">
               {modalTitle}
             </h2>
           </div>

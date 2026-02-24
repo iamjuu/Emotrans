@@ -30,17 +30,17 @@ const Contact = ({ closeForm }) => {
         className="relative max-w-md w-full max-h-[500px] flex flex-col"
         onClick={(e) => e.stopPropagation()}
       >
-        <div className="bg-white rounded-2xl shadow-2xl overflow-hidden flex flex-col max-h-full">
+        <div className="bg-zinc-900 rounded-2xl shadow-2xl overflow-hidden flex flex-col max-h-full border border-zinc-700">
           {/* Header */}
-          <div className="bg-gradient-to-r from-[#41a8d1] to-orange-600 px-8 py-4   flex-shrink-0">
+          <div className="bg-gradient-to-r from-[#41a8d1] to-cyan-600 px-8 py-4   flex-shrink-0">
             <div className="flex items-center justify-between">
               <div>
                 <h1 className="text-[20px] font-bold text-white">Book Consultation</h1>
-                <p className="text-orange-100 text-sm mt-1">Get your interior design consultation</p>
+                <p className="text-white/80 text-sm mt-1">Get your logistics consultation</p>
               </div>
               <button
                 onClick={closeForm}
-                className="text-white hover:text-orange-200 transition-colors p-2"
+                className="text-white hover:text-white/80 transition-colors p-2"
               >
                 <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
@@ -54,11 +54,11 @@ const Contact = ({ closeForm }) => {
             <form onSubmit={handleSubmit} className="p-8 space-y-6">
             <div className="grid grid-cols-2 gap-4">
               <div className="space-y-2">
-                <label htmlFor="userFirstName" className="block text-sm font-medium text-gray-700">
+                <label htmlFor="userFirstName" className="block text-sm font-medium text-zinc-300">
                   First Name
                 </label>
                 <input
-                  className="w-full py-3 px-4 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all duration-200 text-black"
+                  className="w-full py-3 px-4 border border-zinc-600 rounded-lg focus:ring-2 focus:ring-[#41a8d1] focus:border-transparent transition-all duration-200 text-white bg-zinc-800 placeholder-zinc-500"
                   type="text"
                   name="userFirstName"
                   id="userFirstName"
@@ -67,11 +67,11 @@ const Contact = ({ closeForm }) => {
                 />
               </div>
               <div className="space-y-2">
-                <label htmlFor="userLastName" className="block text-sm font-medium text-gray-700">
+                <label htmlFor="userLastName" className="block text-sm font-medium text-zinc-300">
                   Last Name
                 </label>
                 <input
-                  className="w-full py-3 px-4 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all duration-200 text-black"
+                  className="w-full py-3 px-4 border border-zinc-600 rounded-lg focus:ring-2 focus:ring-[#41a8d1] focus:border-transparent transition-all duration-200 text-white bg-zinc-800 placeholder-zinc-500"
                   type="text"
                   name="userLastName"
                   id="userLastName"
@@ -82,11 +82,11 @@ const Contact = ({ closeForm }) => {
             </div>
 
             <div className="space-y-2">
-              <label htmlFor="userEmail" className="block text-sm font-medium text-gray-700">
+              <label htmlFor="userEmail" className="block text-sm font-medium text-zinc-300">
                 Email Address
               </label>
               <input
-                className="w-full py-3 px-4 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all duration-200 text-black"
+                className="w-full py-3 px-4 border border-zinc-600 rounded-lg focus:ring-2 focus:ring-[#41a8d1] focus:border-transparent transition-all duration-200 text-white bg-zinc-800 placeholder-zinc-500"
                 type="email"
                 name="userEmail"
                 id="userEmail"
@@ -96,11 +96,11 @@ const Contact = ({ closeForm }) => {
             </div>
 
             <div className="space-y-2">
-              <label htmlFor="userNumber" className="block text-sm font-medium text-gray-700">
+              <label htmlFor="userNumber" className="block text-sm font-medium text-zinc-300">
                 Phone Number
               </label>
               <input
-                className="w-full py-3 px-4 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all duration-200 text-black"
+                className="w-full py-3 px-4 border border-zinc-600 rounded-lg focus:ring-2 focus:ring-[#41a8d1] focus:border-transparent transition-all duration-200 text-white bg-zinc-800 placeholder-zinc-500"
                 type="tel"
                 name="userNumber"
                 id="userNumber"
@@ -110,11 +110,11 @@ const Contact = ({ closeForm }) => {
             </div>
 
             <div className="space-y-2">
-              <label htmlFor="serviceType" className="block text-sm font-medium text-gray-700">
+              <label htmlFor="serviceType" className="block text-sm font-medium text-zinc-300">
                 Service Type
               </label>
               <select
-                className="w-full py-3 px-4 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all duration-200 text-black"
+                className="w-full py-3 px-4 border border-zinc-600 rounded-lg focus:ring-2 focus:ring-[#41a8d1] focus:border-transparent transition-all duration-200 text-white bg-zinc-800 placeholder-zinc-500"
                 name="serviceType"
                 id="serviceType"
                 required
@@ -130,11 +130,11 @@ const Contact = ({ closeForm }) => {
             </div>
 
             <div className="space-y-2">
-              <label htmlFor="message" className="block text-sm font-medium text-gray-700">
+              <label htmlFor="message" className="block text-sm font-medium text-zinc-300">
                 Message (Optional)
               </label>
               <textarea
-                className="w-full py-3 px-4 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all duration-200 resize-none text-black"
+                className="w-full py-3 px-4 border border-zinc-600 rounded-lg focus:ring-2 focus:ring-[#41a8d1] focus:border-transparent transition-all duration-200 resize-none text-white bg-zinc-800 placeholder-zinc-500"
                 name="message"
                 id="message"
                 rows="3"
@@ -147,7 +147,7 @@ const Contact = ({ closeForm }) => {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="flex-1 bg-gradient-to-r from-[#41a8d1] to-orange-600 text-white   text-[12px] py-3 px-6 rounded-lg font-semibold hover:from-orange-600 hover:to-orange-700 transition-all duration-200 transform hover:scale-105 shadow-lg disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none flex items-center justify-center"
+                  className="flex-1 bg-gradient-to-r from-[#41a8d1] to-cyan-600 text-white   text-[12px] py-3 px-6 rounded-lg font-semibold hover:opacity-90 transition-all duration-200 transform hover:scale-105 shadow-lg disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none flex items-center justify-center"
                 >
                   {isSubmitting ? (
                     <>
@@ -165,7 +165,7 @@ const Contact = ({ closeForm }) => {
                   type="button"
                   onClick={closeForm}
                   disabled={isSubmitting}
-                  className="flex-1 bg-gray-100 text-gray-700 py-3 text-[12px] px-6 rounded-lg font-semibold hover:bg-gray-200 transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
+                  className="flex-1 bg-zinc-700 text-white py-3 text-[12px] px-6 rounded-lg font-semibold hover:bg-zinc-600 transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
                 >
                   Cancel
                 </button>

@@ -30,8 +30,7 @@ const Home = () => {
         {/* Hero text — top left */}
         <div className="flex flex-col justify-center space-y-5 sm:space-y-6 max-w-xl animate-fade-in">
           <h1
-            className="text-2xl text-white text-left sm:text-3xl md:text-4xl lg:text-5xl font-[200] leading-tight tracking-tight"
-            style={{ fontFamily: "'Playfair Display', serif" }}
+            className="titillium-web-extralight text-2xl text-white text-left sm:text-3xl md:text-4xl lg:text-5xl leading-tight tracking-tight"
             data-aos="fade-up"
             data-aos-delay="200"
           >

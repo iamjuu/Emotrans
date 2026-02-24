@@ -2,15 +2,15 @@ import React from 'react';
 
 const Shimmer = ({ width = 'w-full', height = 'h-64', className = '', rounded = 'rounded-lg' }) => {
   return (
-    <div className={`${width} ${height} ${rounded} ${className} bg-gradient-to-r from-gray-200 via-gray-300 to-gray-200 animate-pulse overflow-hidden`}>
-      <div className="w-full h-full bg-gradient-to-r from-transparent via-white/20 to-transparent animate-shimmer"></div>
+    <div className={`${width} ${height} ${rounded} ${className} bg-gradient-to-r from-zinc-700 via-zinc-600 to-zinc-700 animate-pulse overflow-hidden`}>
+      <div className="w-full h-full bg-gradient-to-r from-transparent via-white/10 to-transparent animate-shimmer"></div>
     </div>
   );
 };
 
 // Specific shimmer components for different use cases
 export const ShimmerCard = ({ className = '' }) => (
-  <div className={`bg-white rounded-2xl shadow-lg overflow-hidden max-w-sm w-full ${className}`}>
+  <div className={`bg-zinc-900 rounded-2xl shadow-lg overflow-hidden max-w-sm w-full border border-zinc-800 ${className}`}>
     <Shimmer height="h-64" rounded="rounded-none" />
     <div className="p-6 space-y-3">
       <Shimmer height="h-6" width="w-3/4" />

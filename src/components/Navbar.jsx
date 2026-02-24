@@ -38,7 +38,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className=" fixed w-full z-50 flex bg-gray-100 text-black ">
+    <div className=" fixed w-full z-50 flex bg-black/90 backdrop-blur-md text-white border-b border-zinc-800 ">
       <div className="max-w-8xl mx-auto w-full  ">
         <div className=" flex flex-row justify-between py-2 md:px-32 px-5  ">
           <div className=" flex flex-row items-center cursor-pointer">
@@ -71,7 +71,7 @@ const Navbar = () => {
                 <RouterLink
                   key={index}
                   to={item.to}
-                  className="text-black text-xs sm:text-sm md:text-[14px] hover:text-[#41a8d1] transition-colors duration-200 cursor-pointer border-b-2 border-transparent hover:border-[#41a8d1]"
+                  className="text-white/90 text-xs sm:text-sm md:text-[14px] hover:text-[#41a8d1] transition-colors duration-200 cursor-pointer border-b-2 border-transparent hover:border-[#41a8d1]"
                   data-aos="fade-down"
                   data-aos-delay={200 + (index * 100)}
                 >
@@ -84,7 +84,7 @@ const Navbar = () => {
                   spy={true}
                   smooth={true}
                   duration={500}
-                  className="text-black text-xs sm:text-sm md:text-[14px] hover:text-[#41a8d1] transition-colors duration-200 cursor-pointer border-b-2 border-transparent hover:border-[#41a8d1]"
+                  className="text-white/90 text-xs sm:text-sm md:text-[14px] hover:text-[#41a8d1] transition-colors duration-200 cursor-pointer border-b-2 border-transparent hover:border-[#41a8d1]"
                   data-aos="fade-down"
                   data-aos-delay={200 + (index * 100)}
                 >
@@ -94,7 +94,7 @@ const Navbar = () => {
                 <RouterLink
                   key={index}
                   to={`/#${item.to}`}
-                  className="text-black text-xs sm:text-sm md:text-[14px] hover:text-[#41a8d1] transition-colors duration-200 cursor-pointer border-b-2 border-transparent hover:border-[#41a8d1]"
+                  className="text-white/90 text-xs sm:text-sm md:text-[14px] hover:text-[#41a8d1] transition-colors duration-200 cursor-pointer border-b-2 border-transparent hover:border-[#41a8d1]"
                   data-aos="fade-down"
                   data-aos-delay={200 + (index * 100)}
                 >
@@ -108,7 +108,7 @@ const Navbar = () => {
             <div className="flex items-center">
 
             <button
-              className="border-[#41a8d1] border text-black px-4 py-2 rounded-md hover:bg-[#41a8d1] hover:text-white transition duration-300 ease-in-out"
+              className="border-[#41a8d1] border text-white px-4 py-2 rounded-md hover:bg-[#41a8d1] hover:text-white transition duration-300 ease-in-out"
               onClick={openForm}
               data-aos="fade-left"
               data-aos-delay="600"
@@ -131,7 +131,7 @@ const Navbar = () => {
         <div
           className={`${
             menu ? "translate-x-0" : "-translate-x-full"
-          } lg:hidden flex flex-col absolute  bg-[#2b2f20] backdrop-blur-md text-white left-0 top-16 font-semibold text-lg sm:text-xl md:text-2xl text-center pt-8 pb-4 gap-8 w-full h-fit transition-transform duration-300`}
+          } lg:hidden flex flex-col absolute  bg-zinc-900 backdrop-blur-md text-white left-0 top-16 border-b border-zinc-800 font-semibold text-lg sm:text-xl md:text-2xl text-center pt-8 pb-4 gap-8 w-full h-fit transition-transform duration-300`}
         >
           {navItems.map((item, index) => (
             item.isRoute ? (

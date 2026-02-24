@@ -108,7 +108,7 @@ const App = () => {
 
   return (
     <Router>
-      <div className="min-h-screen bg-gray-50">
+      <div className="min-h-screen bg-black">
         <Navbar />
 
         <Routes>
@@ -122,9 +122,6 @@ const App = () => {
                   </div>
                   <Home />
                 </div>
-                
-              
-
                 <div className="   pt-[25px] md:pt-[10px]" id="about">
                   <About />
                 </div>
@@ -135,8 +132,6 @@ const App = () => {
                 <div className="   pt-[25px] md:pt-[10px]" id="services">
                   <Services />
                 </div>
-
-             
                 <div className="   pt-[125px] md:pt-[10px]">
                   {/* <AnimatedTestimonialsDemo /> */}
                   <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

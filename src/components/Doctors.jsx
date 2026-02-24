@@ -101,10 +101,10 @@ const Doctors = () => {
             </>
           ) : (
             <>
-              <h1 className=" text-4xl font-semibold text-center lg:text-start">
+              <h1 className=" text-4xl font-semibold text-center lg:text-start text-white">
                 Our Logistics Services
               </h1>
-              <p className=" mt-2 text-center text-[14px] md:text-[20px] lg:text-start">
+              <p className=" mt-2 text-center text-zinc-400 text-[14px] md:text-[20px] lg:text-start">
                 Explore our freight and supply chain solutions—road, rail, air, sea, warehousing, and last-mile delivery.
               </p>
             </>
@@ -113,13 +113,13 @@ const Doctors = () => {
         {!isLoading && (
           <div className="flex gap-5 mt-4 lg:mt-0">
             <button
-              className="border border-gray-300 font-[200] text-black  p-3 rounded-full"
+              className="border border-zinc-600 font-[200] text-white p-3 rounded-full hover:bg-zinc-800 transition-colors"
               onClick={() => slider.current.slickPrev()}
             >
               <FaArrowLeft size={20} />
             </button>
             <button
-              className="border border-gray-300 font-[200] text-black  p-3 rounded-full"
+              className="border border-zinc-600 font-[200] text-white p-3 rounded-full hover:bg-zinc-800 transition-colors"
               onClick={() => slider.current.slickNext()}
             >
               <FaArrowRight size={20} />
@@ -127,7 +127,7 @@ const Doctors = () => {
           </div>
         )}
       </div>
-      <div className="mt-5 [&_.slick-dots]:bottom-[-42px] [&_.slick-dots_li]:m-0 [&_.slick-dots_li_button]:before:!text-gray-400 [&_.slick-dots_li.slick-active_button]:before:!text-gray-800 [&_.slick-slide]:outline-none">
+      <div className="mt-5 [&_.slick-dots]:bottom-[-42px] [&_.slick-dots_li]:m-0 [&_.slick-dots_li_button]:before:!text-zinc-500 [&_.slick-dots_li.slick-active_button]:before:!text-[#41a8d1] [&_.slick-slide]:outline-none">
         {isLoading ? (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {Array.from({ length: 6 }).map((_, index) => (
@@ -138,7 +138,7 @@ const Doctors = () => {
           <Slider ref={slider} {...settings}>
             {data.map((e, index) => (
               <div className="px-2 sm:px-3" key={index}>
-                <div className="group bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-md hover:shadow-xl hover:border-gray-200 transition-all duration-300 cursor-pointer">
+                <div className="group bg-zinc-900 rounded-2xl overflow-hidden border border-zinc-800 shadow-md hover:shadow-xl hover:border-zinc-600 transition-all duration-300 cursor-pointer">
                   <div className="relative overflow-hidden aspect-[4/3]">
                     <img
                       src={e.img}
@@ -148,8 +148,8 @@ const Doctors = () => {
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-t-2xl" />
                   </div>
                   <div className="p-5">
-                    <h3 className="text-lg font-semibold text-gray-900 mb-1">{e.name}</h3>
-                    <p className="text-sm text-gray-500">{e.specialties}</p>
+                    <h3 className="text-lg font-semibold text-white mb-1">{e.name}</h3>
+                    <p className="text-sm text-zinc-400">{e.specialties}</p>
                   </div>
                 </div>
               </div>
