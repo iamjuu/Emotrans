@@ -2,11 +2,12 @@
 # Ensures devDependencies (including Vite) are installed so "vite build" works.
 
 [build]
-  command = "npm run build"
+  # Fresh install from lockfile so Vite's dist is complete (avoids missing constants.js from cache)
+  command = "npm ci && npm run build"
   publish = "dist"
 
-# Install devDependencies (Vite is in devDependencies)
-# Do NOT set NODE_ENV=production before install, or dev deps are skipped.
+# Vite and @vitejs/plugin-react are in dependencies so they always install.
+# NPM_FLAGS ensures other build tools (tailwind, postcss, etc.) from devDependencies are installed.
 [build.environment]
   NODE_VERSION = "20"
   NPM_FLAGS = "--include=dev"
