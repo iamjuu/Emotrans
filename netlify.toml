@@ -8,4 +8,5 @@
 # Install devDependencies (Vite is in devDependencies)
 # Do NOT set NODE_ENV=production before install, or dev deps are skipped.
 [build.environment]
+  NODE_VERSION = "20"
   NPM_FLAGS = "--include=dev"
