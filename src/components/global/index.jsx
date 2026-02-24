@@ -1,6 +1,5 @@
 "use client";
 import { lazy, Suspense } from "react";
-import { motion } from "motion/react";
 
 const World = lazy(() =>
   import("../../ui/global").then((m) => ({ default: m.World }))
@@ -398,21 +397,7 @@ export function GlobeDemo() {
       className="flex flex-row items-end justify-end  h-screen md:h-auto relative w-full">
       <div
         className=" flex  items-end justify-end w-full relative overflow-hidden h-full md:h-[40rem] px-4">
-        <motion.div
-          initial={{
-            opacity: 0,
-            y: 20,
-          }}
-          animate={{
-            opacity: 1,
-            y: 0,
-          }}
-          transition={{
-            duration: 1,
-          }}
-          className="div">
-       
-        </motion.div>
+        <div className="div opacity-100 transition-opacity duration-1000" />
         <div
           className="absolute w-full bottom-0 inset-x-0 h-40 bg-gradient-to-b pointer-events-none select-none from-transparent to-black z-40" />
         <div className="absolute w-full top-5 h-72 md:h-full z-10">
