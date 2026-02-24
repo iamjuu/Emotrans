@@ -26,8 +26,9 @@ const About = () => {
         ) : (
           <div className="space-y-4 ">
             <h1 
-              className=" text-[24px] md:text-[42px] font-[600] text-center lg:text-start text-[#41a8d1]"
+              className="  text-[24px] md:text-[42px] font-[600] text-center lg:text-start text-[#41a8d1]"
               data-aos="fade-up"
+              style={{ fontFamily: "'montserrat', serif" }}
               data-aos-delay="100"
             >
               About Us

@@ -91,7 +91,7 @@ const Doctors = () => {
   };
 
   return (
-    <div className=" pb-[60px] flex flex-col  lg:px-32 px-5">
+    <div className="py-5  pb-[60px] flex flex-col  lg:px-32 px-5">
       <div className=" flex flex-col items-center lg:flex-row justify-between mb-10 lg:mb-0">
         <div>
           {isLoading ? (
@@ -101,7 +101,8 @@ const Doctors = () => {
             </>
           ) : (
             <>
-              <h1 className=" text-4xl font-semibold text-center lg:text-start text-white">
+              <h1 className=" text-4xl font-semibold text-center lg:text-start text-[#41a8d1]"
+              style={{ fontFamily: "'montserrat', serif" }}>
                 Our Logistics Services
               </h1>
               <p className=" mt-2 text-center text-zinc-400 text-[14px] md:text-[20px] lg:text-start">

@@ -64,7 +64,7 @@ const BlogCard = ({ img, headlines, description, category, onViewDesign }) => {
             </p>
             
             {/* Read More Button */}
-            <div className="pt-2">
+            {/* <div className="pt-2">
               <button 
                 onClick={() => onViewDesign(category)}
                 className="inline-flex items-center text-[#41a8d1] text-sm font-medium group-hover:text-[#5bb8e0] transition-colors duration-300 hover:underline"
@@ -74,7 +74,7 @@ const BlogCard = ({ img, headlines, description, category, onViewDesign }) => {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>
               </button>
-            </div>
+            </div> */}
           </div>
 
           {/* Decorative Border */}

@@ -70,6 +70,19 @@
   font-style: italic;
 }
 
+/* Londrina Sketch - local from font/Londrina_Sketch (add LondrinaSketch-Regular.ttf) or Google Fonts */
+@font-face {
+  font-family: "Londrina Sketch";
+  src: url('./components/font/Londrina_Sketch/LondrinaSketch-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+.londrina-sketch {
+  font-family: "Londrina Sketch", cursive;
+}
+
 /* Montserrat Font Face Declarations */
 @font-face {
   font-family: 'Montserrat';

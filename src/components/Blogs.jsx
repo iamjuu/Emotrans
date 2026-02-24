@@ -58,7 +58,8 @@ const Blogs = () => {
             </>
           ) : (
             <>
-              <h1 className=" text-[24px] md:text-[32px] font-[500] text-center lg:text-start text-white">
+              <h1 className=" text-[24px] md:text-[42px] font-[600] text-center lg:text-start text-[#41a8d1]"
+              style={{ fontFamily: "'montserrat', serif" }}>
                 Our Services
               </h1>
               <p className=" mt-2 text-zinc-400 text-[14px] md:text-[20px] text-center lg:text-start">

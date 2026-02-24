@@ -30,7 +30,7 @@ const Home = () => {
         {/* Hero text — top left */}
         <div className="flex flex-col justify-center space-y-5 sm:space-y-6 max-w-xl animate-fade-in">
           <h1
-            className="titillium-web-extralight text-2xl text-white text-left sm:text-3xl md:text-4xl lg:text-5xl leading-tight tracking-tight"
+            className=" text-2xl text-white text-left sm:text-3xl md:text-4xl lg:text-[56px] leading-relaxed sm:leading-loose lg:leading-[1] tracking-tight"
             data-aos="fade-up"
             data-aos-delay="200"
           >
@@ -38,7 +38,6 @@ const Home = () => {
           </h1>
           <p
             className="text-sm sm:text-base text-white md:text-lg leading-relaxed text-left"
-            style={{ fontFamily: "'Playfair Display', serif" }}
             data-aos="fade-up"
             data-aos-delay="400"
           >
@@ -52,6 +51,7 @@ const Home = () => {
             data-aos-delay="600"
           >
             <Button
+              className="bg-transparent border-2 border-[#41a8d1] text-[#41a8d1] hover:bg-[#41a8d1] hover:text-white hover:border-[#41a8d1]"
               title="Connect me"
               as="a"
               href="https://wa.me/971585817555"
