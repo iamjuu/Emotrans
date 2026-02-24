@@ -58,10 +58,10 @@ const Blogs = () => {
             </>
           ) : (
             <>
-              <h1 className=" text-4xl font-semibold text-center lg:text-start">
+              <h1 className=" text-[24px] md:text-[32px] font-[500] text-center lg:text-start">
                 Our Services
               </h1>
-              <p className=" mt-2 text-[14px] md:text-[24px] text-center lg:text-start">
+              <p className=" mt-2 text-[14px] md:text-[20px] text-center lg:text-start">
                 Explore our logistics solutions—road, air, sea, rail, warehousing, and last-mile delivery. Reliable freight and supply chain services to keep your business moving.
               </p>
             </>
@@ -79,31 +79,33 @@ const Blogs = () => {
         ) : (
           <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
             <div data-aos="fade-up" data-aos-delay="300">
-              <BlogCard 
-                img={Logistics1} 
-                headlines="Road Freight" 
-                description="Door-to-door road logistics with reliable carriers and real-time tracking for domestic and cross-border shipments."
-                category="road"
-                onViewDesign={openModal}
-              />
-            </div>
-            <div data-aos="fade-up" data-aos-delay="400">
-              <BlogCard 
+            <BlogCard 
                 img={Logistics5} 
                 headlines="Air Cargo" 
                 description="Fast air freight for time-sensitive cargo. We handle documentation, customs, and delivery to major hubs worldwide."
                 category="air"
                 onViewDesign={openModal}
               />
+           
             </div>
-            <div data-aos="fade-up" data-aos-delay="500">
-              <BlogCard
+            <div data-aos="fade-up" data-aos-delay="400">
+            <BlogCard
                 img={Logistics8}
                 headlines="Sea Freight"
                 description="Cost-effective ocean shipping for bulk and containerized cargo. FCL and LCL options with full visibility."
                 category="sea"
                 onViewDesign={openModal}
               />
+            </div>
+            <div data-aos="fade-up" data-aos-delay="500">
+            <BlogCard 
+                img={Logistics1} 
+                headlines="Road Freight" 
+                description="Door-to-door road logistics with reliable carriers and real-time tracking for domestic and cross-border shipments."
+                category="road"
+                onViewDesign={openModal}
+              />
+            
             </div>
             <div data-aos="fade-up" data-aos-delay="600">
               <BlogCard 

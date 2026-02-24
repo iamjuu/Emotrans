@@ -14,7 +14,7 @@ const About = () => {
     return () => clearTimeout(timer);
   }, []);
   return (
-    <div className=" min-h-screen flex flex-col lg:flex-row justify-between items-center lg:px-32 px-5 pt-24 lg:pt-16 gap-5">
+    <div className=" min-h-screen flex flex-col lg:flex-row justify-between  lg:px-32 px-5 pt-24 lg:pt-16 gap-5">
       <div className=" w-full lg:w-3/4 space-y-4">
         {isLoading ? (
           <>
@@ -26,14 +26,14 @@ const About = () => {
         ) : (
           <>
             <h1 
-              className=" text-4xl font-semibold text-center lg:text-start"
+              className=" text-[24px] md:text-[32px] font-[500] text-center lg:text-start"
               data-aos="fade-up"
               data-aos-delay="100"
             >
               About Us
             </h1>
             <p 
-              className=" text-justify   text-[14px] md:text-[24px]  lg:text-start"
+              className=" text-justify   text-[14px] md:text-[20px]  lg:text-start"
               data-aos="slide-up"
               data-aos-delay="200"
             >
@@ -43,7 +43,7 @@ const About = () => {
               keep your business on schedule and your customers satisfied.
             </p>
             <p 
-              className="text-justify text-[14px] md:text-[24px] lg:text-start"
+              className="text-justify text-[14px] md:text-[20px] lg:text-start"
               data-aos="fade"
               data-aos-delay="300"
             >
@@ -52,16 +52,7 @@ const About = () => {
               and inventory management. From pickup to delivery, we work closely with 
               our clients to ensure every shipment is tracked, on time, and handled with care.
             </p>
-            {/* <p 
-              className="text-justify text-[14px] md:text-[24px] lg:text-start"
-              data-aos="slide-down"
-              data-aos-delay="400"
-            >
-              Our services include multimodal freight, warehousing, customs clearance, 
-              real-time tracking, and dedicated support. We believe logistics should 
-              be transparent, efficient, and scalable—so you can focus on growing 
-              your business while we handle the movement of your goods.
-            </p> */}
+         
           </>
         )}
       </div>
@@ -74,7 +65,7 @@ const About = () => {
           <ShimmerImage height="h-80" className="rounded-lg" />
         ) : (
           <img 
-            className=" rounded-lg" 
+            className=" rounded-lg h-[400px] w-full object-cover" 
             src={Logistics11} 
             alt="Logistics and cargo delivery" 
             data-aos="slide-down"

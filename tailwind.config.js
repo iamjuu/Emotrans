@@ -12,6 +12,7 @@ export default {
       fontFamily: {
         'manrope': ['Manrope', 'sans-serif'],
         'montserrat': ['Montserrat', 'sans-serif'],
+        'playfair': ['Playfair Display', 'serif'],
         'sans': ['Montserrat', 'Manrope', 'sans-serif'],
       },
     },

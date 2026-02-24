@@ -51,7 +51,7 @@ const Services = () => {
               </>
             ) : (
               <>
-                <p className="text-gray-600 text-base sm:text-[24px] lg:text-[26px] leading-relaxed">
+                <p className="text-gray-600 text-[14px] md:text-[20px] leading-relaxed">
                   We deliver end-to-end logistics and freight solutions across road, rail, air, and sea. 
                   From warehousing and customs clearance to last-mile delivery, our team brings 
                   expertise in supply chain management, real-time tracking, and on-time delivery. 
@@ -75,62 +75,72 @@ const Services = () => {
             )}
           </div>
 
-          {/* Right Content - Images Grid */}
+          {/* Right Content - Images Grid + Stats (single visual block) */}
           <div 
-            className="relative"
+            className="relative flex flex-col"
             data-aos="fade-up"
             data-aos-delay="300"
           >
             {isLoading ? (
-              <div className="grid grid-cols-2 gap-3 sm:gap-4 lg:gap-6 h-80 sm:h-96 lg:h-[28rem] xl:h-[32rem]">
-                <div className="row-span-2 col-span-1">
-                  <ShimmerImage height="h-full" className="rounded-2xl lg:rounded-3xl" />
+              <>
+                <div className="grid grid-cols-2 gap-2 sm:gap-4 lg:gap-6 w-full aspect-[4/5] sm:aspect-[5/6] lg:aspect-[4/5] min-h-[16rem] max-h-[28rem] lg:max-h-[32rem]">
+                  <div className="row-span-2 col-span-1 min-h-0">
+                    <ShimmerImage height="h-full" className="rounded-xl sm:rounded-2xl lg:rounded-3xl" />
+                  </div>
+                  <div className="col-span-1 min-h-0">
+                    <ShimmerImage height="h-full" className="rounded-xl sm:rounded-2xl lg:rounded-3xl" />
+                  </div>
+                  <div className="col-span-1 min-h-0">
+                    <ShimmerImage height="h-full" className="rounded-xl sm:rounded-2xl lg:rounded-3xl" />
+                  </div>
                 </div>
-                <div className="col-span-1">
-                  <ShimmerImage height="h-full" className="rounded-2xl lg:rounded-3xl" />
+                <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6 py-6 sm:py-8">
+                  {[1, 2, 3, 4].map((i) => (
+                    <div key={i} className="h-14 sm:h-16 bg-gray-200 rounded animate-pulse" />
+                  ))}
                 </div>
-                <div className="col-span-1">
-                  <ShimmerImage height="h-full" className="rounded-2xl lg:rounded-3xl" />
-                </div>
-              </div>
+              </>
             ) : (
-              <div className="grid grid-cols-2 gap-3 sm:gap-4 lg:gap-6 h-80 sm:h-96 lg:h-[28rem] xl:h-[32rem]">
-                {/* Large logistics image - Left (spans 2 rows) */}
-                <div className="row-span-2 col-span-1">
-                  <div className="relative h-full rounded-2xl lg:rounded-3xl overflow-hidden shadow-2xl group hover:shadow-3xl transition-all duration-500">
-                    <img 
-                      src={Logistics11} 
-                      alt="Warehousing and logistics operations" 
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
+              <>
+                {/* Image grid - aspect-ratio scales with width so responsive */}
+                <div className="grid grid-cols-2 gap-2 sm:gap-4 lg:gap-6 w-full aspect-[4/5] sm:aspect-[5/6] lg:aspect-[4/5] min-h-[16rem] max-h-[28rem] lg:max-h-[32rem]">
+                  {/* Large logistics image - Left (spans 2 rows) */}
+                  <div className="row-span-2 col-span-1 min-h-0">
+                    <div className="relative h-full rounded-xl sm:rounded-2xl lg:rounded-3xl overflow-hidden shadow-2xl group hover:shadow-3xl transition-all duration-500">
+                      <img 
+                        src={Logistics11} 
+                        alt="Warehousing and logistics operations" 
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent" />
+                    </div>
+                  </div>
+                  {/* Air / cargo - Top Right */}
+                  <div className="col-span-1 min-h-0">
+                    <div className="relative h-full rounded-xl sm:rounded-2xl lg:rounded-3xl overflow-hidden shadow-2xl group hover:shadow-3xl transition-all duration-500">
+                      <img 
+                        src={Logistics5} 
+                        alt="Air cargo and freight" 
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent" />
+                    </div>
+                  </div>
+                  {/* Sea freight - Bottom Right */}
+                  <div className="col-span-1 min-h-0">
+                    <div className="relative h-full rounded-xl sm:rounded-2xl lg:rounded-3xl overflow-hidden shadow-2xl group hover:shadow-3xl transition-all duration-500">
+                      <img 
+                        src={Logistics8} 
+                        alt="Sea freight and shipping" 
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent" />
+                    </div>
                   </div>
                 </div>
-                
-                {/* Air / cargo - Top Right */}
-                <div className="col-span-1">
-                  <div className="relative h-full rounded-2xl lg:rounded-3xl overflow-hidden shadow-2xl group hover:shadow-3xl transition-all duration-500">
-                    <img 
-                      src={Logistics5} 
-                      alt="Air cargo and freight" 
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
-                  </div>
-                </div>
-                
-                {/* Sea freight - Bottom Right */}
-                <div className="col-span-1">
-                  <div className="relative h-full rounded-2xl lg:rounded-3xl overflow-hidden shadow-2xl group hover:shadow-3xl transition-all duration-500">
-                    <img 
-                      src={Logistics8} 
-                      alt="Sea freight and shipping" 
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
-                  </div>
-                </div>
-              </div>
+
+            
+              </>
             )}
           </div>
         </div>

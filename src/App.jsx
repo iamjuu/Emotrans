@@ -9,8 +9,67 @@ import Doctors from "./components/Doctors";
 import Blogs from "./components/Blogs";
 import QRConnect from "./components/QRConnect";
 import Footer from "./components/Footer";
-import { AnimatedTestimonialsDemo } from "./components/acternity/card";
+// import { AnimatedTestimonialsDemo } from "./components/acternity/card";
+import { FollowingPointerDemo } from "./components/card-hover";
 // import { CometCardDemo } from "./components/3dcard";
+import {
+  Logistics1,
+  Logistics10,
+  Logistics2,
+  Logistics3,
+  Logistics4,
+  Logistics6,
+  Logistics7,
+  Logistics9,
+  LogisticsLogo,
+} from "./assets";
+import { GlobeDemo } from "./components/global";
+import { LayoutGridDemo } from "./components/grid-layout";
+
+// Titles: 32 chars each | Descriptions: 115 chars each
+const cardData = [
+  {
+    slug: "roadways-airways-seaways-railways",
+    author: "EmoTrans",
+    date: "28th March, 2024",
+    title: "Roadways, Airways, Seaways & Rail",
+    description:
+      "End-to-end cargo across all modes. We connect your goods from origin to destination with reliable road, air, sea, and rail logistics worldwide.",
+    image: Logistics1,
+    authorAvatar: LogisticsLogo,
+  },
+  {
+    slug: "warehouse-and-storage",
+    author: "EmoTrans",
+    date: "15th April, 2024",
+    title: "Warehousing & Storage Solutions.",
+    description:
+      "Secure, scalable warehousing and inventory. Our facilities support your supply chain with real-time tracking and efficient distribution.",
+    image: Logistics6,
+    authorAvatar: LogisticsLogo,
+  },
+  {
+    slug: "global-freight-forwarding",
+    author: "EmoTrans",
+    date: "1st May, 2024",
+    title: "Global Freight Forwarding Support",
+    description:
+      "International shipping and customs made simple. We handle documentation, compliance, and timely delivery across borders for you.",
+    image: Logistics10,
+    authorAvatar: LogisticsLogo,
+  },
+  {
+    slug: "last-mile-delivery",
+    author: "EmoTrans",
+    date: "20th June, 2024",
+    title: "Last-Mile Delivery & Fulfillment",
+    description:
+      "From warehouse to your customer's door. Fast, tracked last-mile delivery and fulfillment services to complete your logistics chain.",
+    image: Logistics4,
+    authorAvatar: LogisticsLogo,
+  },
+];
+
 const App = () => {
   const whatsappNumber = "585817555";
   const whatsappText = encodeURIComponent("Hi, I'm interested in your services. Please provide me with more information.");
@@ -57,28 +116,46 @@ const App = () => {
             path="/"
             element={
               <main>
-                <div className="   " id="home">
+                <div className=" " id="home">
+                  <div className="max-w-lg mx-auto">
+                  {/* <GlobeDemo /> */}
+                  </div>
                   <Home />
                 </div>
+                
+              
 
-                <div className="   pt-[25px] md:pt-[100px]" id="about">
+                <div className="   pt-[25px] md:pt-[10px]" id="about">
                   <About />
                 </div>
 
-                <div className="   pt-[25px] md:pt-[100px]" id="blog">
+                <div className="   pt-[25px] md:pt-[10px]" id="blog">
                   <Blogs />
                 </div>
-                <div className="   pt-[25px] md:pt-[100px]" id="services">
+                <div className="   pt-[25px] md:pt-[10px]" id="services">
                   <Services />
                 </div>
-                <div className="   pt-[125px] md:pt-[100px]">
-                  <AnimatedTestimonialsDemo />
+
+             
+                <div className="   pt-[125px] md:pt-[10px]">
+                  {/* <AnimatedTestimonialsDemo /> */}
+                  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                  <div className="grid gap-16 md:gap-20 lg:gap-24 grid-cols-4">
+                    {cardData.map((item) => (
+                      <FollowingPointerDemo key={item.slug} content={item} />
+                    ))}
+                  </div>
+                  </div>
                 </div>
-                <div className="   pt-[25px] md:pt-[100px]">
+                <div className="   pt-[25px] md:pt-[10px]">
                   <Counter />
                 </div>
+                <div className="  pt-[25px] md:pt-[10px]" id="grid">
 
-                <div className="   pt-[25px] md:pt-[100px]" id="doctors">
+<LayoutGridDemo />
+                </div>
+
+                <div className="   pt-[25px] md:pt-[10px]" id="doctors">
                   <Doctors />
                 </div>
               </main>

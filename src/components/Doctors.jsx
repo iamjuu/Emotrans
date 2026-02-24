@@ -91,7 +91,7 @@ const Doctors = () => {
   };
 
   return (
-    <div className=" py-[130px] flex flex-col  lg:px-32 px-5">
+    <div className=" pb-[60px] flex flex-col  lg:px-32 px-5">
       <div className=" flex flex-col items-center lg:flex-row justify-between mb-10 lg:mb-0">
         <div>
           {isLoading ? (
@@ -104,7 +104,7 @@ const Doctors = () => {
               <h1 className=" text-4xl font-semibold text-center lg:text-start">
                 Our Logistics Services
               </h1>
-              <p className=" mt-2 text-center text-[14px] md:text-[24px] lg:text-start">
+              <p className=" mt-2 text-center text-[14px] md:text-[20px] lg:text-start">
                 Explore our freight and supply chain solutions—road, rail, air, sea, warehousing, and last-mile delivery.
               </p>
             </>

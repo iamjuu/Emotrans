@@ -36,7 +36,12 @@ const Footer = () => {
                 <svg className="w-4 h-4 text-gray-600 mt-1 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
                 </svg>
-                <span className="leading-relaxed">Bank in Dubai, United Arab Emirates</span>
+                <div className="flex flex-col">
+                <span className="leading-relaxed">5 Stars Business Center </span>
+                <span>Rasis Business Center</span>
+                <span> Al Barsha First</span>
+                </div>
+
               </div>
               <div className="flex items-center">
                 <svg className="w-4 h-4 text-gray-600 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
@@ -49,7 +54,7 @@ const Footer = () => {
                 <svg className="w-4 h-4 text-gray-600 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                   <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
                 </svg>
-                <span>+971 58 581 7555</span>
+                <span>052 777 5666</span>
               </div>
 
               <div className="flex items-center">
@@ -63,7 +68,7 @@ const Footer = () => {
                 {/* <svg className="w-4 h-4 text-gray-600 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                   <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
                 </svg> */}
-                <span>Office 915</span>
+                <span>Office 400-072, 4th Floor</span>
               </div>
             </div>
           </div>

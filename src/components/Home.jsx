@@ -1,103 +1,59 @@
 import Button from "../layouts/Button";
-import { LogisticsVideo, Logistics1 } from "../assets/index.js";
-import { useState, useRef, useEffect } from "react";
+import Orb from "./Orb";
+import { Logistics5 } from "../assets";
+import { GlobeDemo } from "./global";
 
 const Home = () => {
-  const [isVideoPlaying, setIsVideoPlaying] = useState(false);
-  const videoRef = useRef(null);
-
-  const handleVideoCanPlay = () => {
-    // Video ready to play
-  };
-
-  const handleVideoPlay = () => {
-    setIsVideoPlaying(true);
-  };
-
-  const handleVideoError = () => {
-    setIsVideoPlaying(true);
-  };
-
-  const handleVideoLoadStart = () => {
-    setIsVideoPlaying(false);
-  };
-
-  useEffect(() => {
-    const video = videoRef.current;
-    if (!video) return;
-    const playPromise = video.play();
-    if (playPromise && typeof playPromise.then === "function") {
-      playPromise.catch(() => {
-        setIsVideoPlaying(true);
-      });
-    }
-  }, []);
-
   return (
-    <div className="relative min-h-screen flex flex-col justify-center lg:px-32 px-5 text-white overflow-hidden">
-      <div className="absolute inset-0 w-full h-full bg-black/90 -z-20" />
-      {/* Fallback background image when video fails or is loading */}
+    <div
+      className="relative bg-black backdrop-blur-sm min-h-screen flex flex-col justify-end items-center lg:px-32 px-5 text-white overflow-hidden bg-cover bg-center bg-no-repeat"
+
+    >
+      {/* Blur overlay (keeps bg image visible, adds blur) */}
+      <div className="absolute inset-0 backdrop-blur-sm bg-black/30 -z-10" aria-hidden />
+
       <div
-        className="absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat opacity-90 -z-15"
-        style={{ backgroundImage: `url(${Logistics1})` }}
-      />
-      <video
-        ref={videoRef}
-        className="absolute inset-0 w-full h-full object-cover opacity-90 -z-10"
-        src={LogisticsVideo}
-        autoPlay
-        loop
-        muted
-        playsInline
-        preload="auto"
-        poster={Logistics1}
-        onError={handleVideoError}
-        onLoadStart={handleVideoLoadStart}
-        onCanPlay={handleVideoCanPlay}
-        onPlay={handleVideoPlay}
-      />
-      {/* Video loading loader overlay */}
-      {!isVideoPlaying && (
-        <div className="absolute inset-0 w-full h-full bg-black bg-opacity-80 flex items-center justify-center -z-5 overflow-hidden">
-          <div className="text-center px-4 max-w-sm mx-auto">
-            <div className="relative w-16 h-16 mx-auto mb-4">
-              {/* Spinning loader */}
-              <div className="w-16 h-16 border-4 border-orange-500 border-t-transparent rounded-full animate-spin"></div>
-              {/* Pulse effect */}
-              <div className="w-16 h-16 border-4 border-orange-500 border-opacity-30 rounded-full animate-ping absolute top-0 left-0"></div>
-            </div>
-            <p className="text-white text-lg font-medium">Loading Experience...</p>
-            <p className="text-gray-300 text-sm mt-2">Preparing your design journey</p>
-          </div>
-        </div>
-      )}
-      
-      {/* Content - only show after video starts playing */}
-      {isVideoPlaying && (
-        <div className="relative z-10 w-full lg:w-4/5 space-y-4 sm:space-y-5 mt-6 sm:mt-8 lg:mt-10 animate-fade-in">
-          <h1 
-            className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight sm:leading-tight"
+        className="absolute mt-7 inset-0 w-full h-full"
+        style={{ zIndex: 0 }}
+      >
+        <Orb
+          hoverIntensity={2}
+          rotateOnHover
+          hue={0}
+          forceHoverState={false}
+          backgroundColor="#000000"
+        />
+      </div>
+
+      {/* Content: hero text in flow, globe fixed at right bottom */}
+      <div className="relative z-10 w-full max-w-7xl mx-auto min-h-[85vh] py-8 lg:py-12">
+        {/* Hero text — top left */}
+        <div className="flex flex-col justify-center space-y-5 sm:space-y-6 max-w-xl animate-fade-in">
+          <h1
+            className="text-2xl text-white text-left sm:text-3xl md:text-4xl lg:text-5xl font-[200] leading-tight tracking-tight"
+            style={{ fontFamily: "'Playfair Display', serif" }}
             data-aos="fade-up"
             data-aos-delay="200"
           >
             Your Trusted Logistics Partner Road, Rail, Air & Sea—Delivered
           </h1>
-          <p 
-            className="text-sm sm:text-base md:text-lg leading-relaxed sm:leading-relaxed"
+          <p
+            className="text-sm sm:text-base text-white md:text-lg leading-relaxed text-left"
+            style={{ fontFamily: "'Playfair Display', serif" }}
             data-aos="fade-up"
             data-aos-delay="400"
           >
-            End-to-end freight and supply chain solutions that keep your business moving. 
-            We handle roadways, railways, airways, and seaways with reliable tracking, 
+            End-to-end freight and supply chain solutions that keep your business moving.
+            We handle roadways, railways, airways, and seaways with reliable tracking,
             on-time delivery, and transparent pricing. From warehousing to last-mile—we deliver.
           </p>
-          <div 
+          <div
             className="pt-2 sm:pt-4"
             data-aos="fade-up"
             data-aos-delay="600"
           >
-            <Button 
-              title="Connect me" 
+            <Button
+              title="Connect me"
               as="a"
               href="https://wa.me/971585817555"
               target="_blank"
@@ -105,7 +61,14 @@ const Home = () => {
             />
           </div>
         </div>
-      )}
+
+        {/* Globe — absolutely positioned at right bottom corner */}
+        <div className="absolute bottom-0 right-0 w-full sm:w-[85%] lg:w-[55%] xl:w-[50%] h-[220px] sm:h-[260px] lg:h-[320px] overflow-hidden pointer-events-none lg:pointer-events-auto">
+          <div className="absolute right-0 top-0 h-[320px] sm:h-[400px] lg:h-[480px] w-[100%] min-w-[320px] max-w-[520px] flex items-start justify-end">
+            <GlobeDemo />
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
