@@ -92,6 +92,7 @@ import StaircaseImage2 from "./images/STAIRCASE/07.jpg"
 
 // LOGISTICS Images
 import LogisticsLogo from "./images/logistics/emotranslogo.png"
+import LogisticsLogoWhite from "./images/logistics/emotrans-white.png"
 import LogisticsVideo from "./images/logistics/Logistics Stock Video Of Roadways AirWays Seaways Railways - Cargo.mp4"
 import Logistics1 from "./images/logistics/pexels-aan-amrin-383798812-14801547.jpg"
 import Logistics2 from "./images/logistics/pexels-alfinauzikri-5696170.jpg"
@@ -147,5 +148,6 @@ export {
   StaircaseImage1, StaircaseImage2,
   Logistics1, Logistics2, Logistics3, Logistics4, Logistics5, Logistics6, Logistics7, Logistics8, Logistics9, Logistics10, Logistics11, Logistics12, Logistics13, Logistics14, Logistics15, Logistics16, Logistics17, Logistics18, Logistics19, Logistics20,
   CamLogo01, CamLogo02, CamLogo03, Logo001, Logo01, Logo02, Logo03,
-  Faju, FajuJpg, Faju1, Fidutty, Placeholder, PlaceholderGirl
+  Faju, FajuJpg, Faju1, Fidutty, Placeholder, PlaceholderGirl,
+  LogisticsLogoWhite
 }

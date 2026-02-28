@@ -31,40 +31,36 @@ const cardData = [
   {
     slug: "roadways-airways-seaways-railways",
     author: "EmoTrans",
-    date: "28th March, 2024",
     title: "Roadways, Airways, Seaways & Rail",
     description:
-      "End-to-end cargo across all modes. We connect your goods from origin to destination with reliable road, air, sea, and rail logistics worldwide.",
+      "Seamless cargo transport across road, air, sea, and rail worldwide.",
     image: Logistics1,
     authorAvatar: LogisticsLogo,
   },
   {
     slug: "warehouse-and-storage",
     author: "EmoTrans",
-    date: "15th April, 2024",
-    title: "Warehousing & Storage Solutions.",
+    title: "Warehousing & Storage Solutions",
     description:
-      "Secure, scalable warehousing and inventory. Our facilities support your supply chain with real-time tracking and efficient distribution.",
+      "Secure storage with real-time tracking and smooth distribution.",
     image: Logistics6,
     authorAvatar: LogisticsLogo,
   },
   {
     slug: "global-freight-forwarding",
     author: "EmoTrans",
-    date: "1st May, 2024",
     title: "Global Freight Forwarding Support",
     description:
-      "International shipping and customs made simple. We handle documentation, compliance, and timely delivery across borders for you.",
+      "Hassle-free international shipping and customs handling.",
     image: Logistics10,
     authorAvatar: LogisticsLogo,
   },
   {
     slug: "last-mile-delivery",
     author: "EmoTrans",
-    date: "20th June, 2024",
     title: "Last-Mile Delivery & Fulfillment",
     description:
-      "From warehouse to your customer's door. Fast, tracked last-mile delivery and fulfillment services to complete your logistics chain.",
+      "Fast, tracked delivery to your customer’s doorstep.",
     image: Logistics4,
     authorAvatar: LogisticsLogo,
   },

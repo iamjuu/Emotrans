@@ -4,7 +4,7 @@ import { Link as RouterLink, useLocation } from "react-router-dom";
 import Button from "../layouts/Button";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import Contact from "../models/Contact";
-import { LogisticsLogo } from "../assets";
+import { LogisticsLogo, LogisticsLogoWhite } from "../assets";
 
 const Navbar = () => {
   const [menu, setMenu] = useState(false);
@@ -45,7 +45,7 @@ const Navbar = () => {
             {isHomePage ? (
               <Link to="home" spy={true} smooth={true} duration={500}>
                 <img 
-                  src={LogisticsLogo} 
+                  src={LogisticsLogoWhite} 
                   alt="Emotrans Logo" 
                   className="w-8 sm:w-10 md:w-26 lg:w-32" 
                   data-aos="fade-right"
