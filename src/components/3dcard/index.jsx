@@ -1,5 +1,5 @@
 import { CometCard } from "../../ui/3dcard/3dcard";
-import {Wall1} from "../../assets"
+import { Logistics1 } from "../../assets"
 export function CometCardDemo() {
   return (
     <CometCard>
@@ -18,7 +18,7 @@ export function CometCardDemo() {
               loading="lazy"
               className="absolute inset-0 h-full w-full rounded-[16px] bg-secondary object-cover "
               alt="Invite background"
-              src={Wall1}
+              src={Logistics1}
               style={{
                 // boxShadow: "rgba(231, 50, 50, 0.871) 0px 5px 6px 0px",
                 opacity: 1,
