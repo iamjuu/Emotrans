@@ -51,7 +51,7 @@ const Footer = () => {
 
               {/* Email */}
               <div>
-                <span>designcam.7@gmail.com</span>
+                <span>Info@emotransuae.com</span>
               </div>
 
               {/* Phone */}
